@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trio Website</title>
+   
+
+<link rel="stylesheet" href="output.css">
+
+ <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    
+    :root {
+      --color-primary: #32CD32;
+      --color-navy: #0A2540;
+      --color-light: #F5F7FA;
+      --color-aqua: #4FD1C5;
+      --color-dark: #333333;
+    }
+
+  
+
+    
+    .slide-content {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      max-width: 400px;
+      color: white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+      z-index: 10;
+    }
+
+ 
+
+  </style>
+</head>
+<body class="font-sans bg-light text-dark">
+ <header class="bg-[var(--color-navy)] text-[var(--color-light)] body-font">
+  <div class="container mx-auto flex items-center justify-between px-4 py-2 h-16">
+    <!-- Logo -->
+    <a href="#" class="flex items-center title-font font-medium">
+      <img src="./assets/Favicon 2_SVG.svg" alt="Trio Logo" class="h-10 md:h-12" />
+    </a>
+
+    <!-- Hamburger for mobile -->
+    <button id="menu-btn" class="inline-flex items-center justify-center p-2 text-[var(--color-light)] rounded md:hidden focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]" aria-label="Toggle menu">
+      <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav id="menu" class="hidden md:flex md:ml-auto items-center text-base space-x-2">
+      <a href="#" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">Home</a>
+      <a href="#" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">About</a>
+      <a href="#" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">Services</a>
+      <a href="#" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">Blog</a>
+      <a href="#" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">Contact Us</a>
+    </nav>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <div id="mobile-menu" class="md:hidden bg-[var(--color-navy)] hidden px-4 pb-4">
+    <nav class="flex flex-col">
+      <a href="#" class="px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Home</a>
+      <a href="#" class="px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">About</a>
+      <a href="#" class="px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Services</a>
+      <a href="#" class="px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Blog</a>
+      <a href="#" class="px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+
+
+ <!-- ✅ HERO SECTION SLIDER -->
+<section class="slider-wrapper relative overflow-hidden h-[60vh] font-sans select-none">
+
+  <div class="slides flex flex-nowrap transition-transform duration-700 ease-in-out relative h-[60vh]">
+
+    <!-- SLIDE -->
+    <div class="slide flex-shrink-0 w-screen h-[60vh] bg-cover bg-center relative flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80');">
+      <div class="bg-white/10 backdrop-blur-md border border-white/30 rounded-2xl p-8 max-w-xl text-center shadow-xl" style="box-shadow: 0 0 40px rgba(255,255,255,0.2); border-radius: 2rem; border: 2px solid transparent; background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.1));">
+        <h2 class="text-4xl font-bold mb-4">Harness Solar Energy Efficiently</h2>
+        <p class="mb-6">Eco-friendly solar panels that maximize energy output with minimal footprint.</p>
+        <a href="#solar" class="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-2 rounded-full shadow-md hover:scale-105 transition">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Repeat for other slides -->
+    <div class="slide flex-shrink-0 w-screen h-[60vh] bg-cover bg-center relative flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1470&q=80');">
+      <div class="bg-white/10 backdrop-blur-md border border-white/30 rounded-2xl p-8 max-w-xl text-center shadow-xl">
+        <h2 class="text-4xl font-bold mb-4">Sustainable Urban Transportation</h2>
+        <p class="mb-6">Electric vehicles and smart grids reduce pollution and carbon footprint.</p>
+        <a href="#transport" class="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-2 rounded-full shadow-md hover:scale-105 transition">Explore Solutions</a>
+      </div>
+    </div>
+
+    <div class="slide flex-shrink-0 w-screen h-[60vh] bg-cover bg-center relative flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80');">
+      <div class="bg-white/10 backdrop-blur-md border border-white/30 rounded-2xl p-8 max-w-xl text-center shadow-xl">
+        <h2 class="text-4xl font-bold mb-4">Eco-friendly Building Materials</h2>
+        <p class="mb-6">Innovative green materials for a sustainable construction industry.</p>
+        <a href="#building" class="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-2 rounded-full shadow-md hover:scale-105 transition">Discover More</a>
+      </div>
+    </div>
+
+    <div class="slide flex-shrink-0 w-screen h-[60vh] bg-cover bg-center relative flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1470&q=80');">
+      <div class="bg-white/10 backdrop-blur-md border border-white/30 rounded-2xl p-8 max-w-xl text-center shadow-xl">
+        <h2 class="text-4xl font-bold mb-4">Reduce Waste, Reuse More</h2>
+        <p class="mb-6">Smart recycling systems turning waste into valuable resources.</p>
+        <a href="#waste" class="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-2 rounded-full shadow-md hover:scale-105 transition">Get Involved</a>
+      </div>
+    </div>
+
+    <div class="slide flex-shrink-0 w-screen h-[60vh] bg-cover bg-center relative flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=1470&q=80');">
+      <div class="bg-white/10 backdrop-blur-md border border-white/30 rounded-2xl p-8 max-w-xl text-center shadow-xl">
+        <h2 class="text-4xl font-bold mb-4">Green Energy Storage</h2>
+        <p class="mb-6">Advanced batteries for storing renewable energy efficiently.</p>
+        <a href="#storage" class="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-2 rounded-full shadow-md hover:scale-105 transition">See Solutions</a>
+      </div>
+    </div>
+
+  </div>
+
+<section class="slider-controls absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+  <span class="dot w-4 h-4 rounded-full bg-white/50 opacity-70 cursor-pointer transition-all duration-300" data-slide="0"></span>
+  <span class="dot w-4 h-4 rounded-full bg-white/50 opacity-70 cursor-pointer transition-all duration-300" data-slide="1"></span>
+  <span class="dot w-4 h-4 rounded-full bg-white/50 opacity-70 cursor-pointer transition-all duration-300" data-slide="2"></span>
+  <span class="dot w-4 h-4 rounded-full bg-white/50 opacity-70 cursor-pointer transition-all duration-300" data-slide="3"></span>
+  <span class="dot w-4 h-4 rounded-full bg-white/50 opacity-70 cursor-pointer transition-all duration-300" data-slide="4"></span>
+</section>
+
+<div style="border: 2px solid red; padding: 20px;">
+  <!-- service section code yaha paste karo -->
+   <h2>fgjffjfj</h2>
+</div>
+
+
+<div class="body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-12">
+        <h1 class="sm:text-4xl text-3xl font-bold mb-4 text-blue-900">Service Highlights</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-700">Explore our key services that power your commute and convenience.</p>
+      </div>
+      <div class="flex flex-wrap -mx-4 text-center">
+
+        <!-- Leasing -->
+        <div class="md:w-1/2 lg:w-1/4 px-4 mb-10">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="Leasing" class="object-cover object-center h-full w-full" src="https://dummyimage.com/600x400/32cd32/ffffff&text=Leasing" />
+          </div>
+          <h2 class="title-font text-2xl font-medium text-blue-900 mt-6 mb-3">Leasing</h2>
+          <p class="leading-relaxed text-base text-gray-700">Flexible vehicle leasing solutions tailored to your fleet and employee needs.</p>
+          <button class="flex mx-auto mt-6 text-white bg-gradient-to-r from-green-400 to-blue-500 border-0 py-2 px-5 rounded-full hover:scale-105 transform transition duration-300 focus:outline-none">Learn More</button>
+        </div>
+
+        <!-- Transport -->
+        <div class="md:w-1/2 lg:w-1/4 px-4 mb-10">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="Transport" class="object-cover object-center h-full w-full" src="https://dummyimage.com/600x400/0a2540/ffffff&text=Transport" />
+          </div>
+          <h2 class="title-font text-2xl font-medium text-blue-900 mt-6 mb-3">Transport</h2>
+          <p class="leading-relaxed text-base text-gray-700">Reliable daily employee transportation with real-time tracking and safety.</p>
+          <button class="flex mx-auto mt-6 text-white bg-gradient-to-r from-green-400 to-blue-500 border-0 py-2 px-5 rounded-full hover:scale-105 transform transition duration-300 focus:outline-none">Book Now</button>
+        </div>
+
+        <!-- Charging -->
+        <div class="md:w-1/2 lg:w-1/4 px-4 mb-10">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="Charging" class="object-cover object-center h-full w-full" src="https://dummyimage.com/600x400/4fd1c5/ffffff&text=Charging" />
+          </div>
+          <h2 class="title-font text-2xl font-medium text-blue-900 mt-6 mb-3">Charging</h2>
+          <p class="leading-relaxed text-base text-gray-700">Smart charging stations for EVs with fast-charging and remote monitoring.</p>
+          <button class="flex mx-auto mt-6 text-white bg-gradient-to-r from-green-400 to-blue-500 border-0 py-2 px-5 rounded-full hover:scale-105 transform transition duration-300 focus:outline-none">Charge Now</button>
+        </div>
+
+        <!-- Travel -->
+        <div class="md:w-1/2 lg:w-1/4 px-4 mb-10">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="Travel" class="object-cover object-center h-full w-full" src="https://dummyimage.com/600x400/333333/ffffff&text=Travel" />
+          </div>
+          <h2 class="title-font text-2xl font-medium text-blue-900 mt-6 mb-3">Travel</h2>
+          <p class="leading-relaxed text-base text-gray-700">End-to-end corporate travel services including ticketing, cabs, and hotels.</p>
+          <button class="flex mx-auto mt-6 text-white bg-gradient-to-r from-green-400 to-blue-500 border-0 py-2 px-5 rounded-full hover:scale-105 transform transition duration-300 focus:outline-none">Plan Trip</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
+ 
