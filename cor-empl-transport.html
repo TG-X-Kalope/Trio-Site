@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trio Website</title>
+
+
+
+  <link href="./dist/output.css" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --color-primary: #32CD32;
+      --color-navy: #0A2540;
+      --color-light: #F5F7FA;
+      --color-aqua: #4FD1C5;
+      --color-dark: #333333;
+    }
+
+
+
+
+    .slide-content {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      max-width: 400px;
+      color: white;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      z-index: 10;
+    }
+
+
+    /* Hide scrollbar but keep scroll functionality */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  </style>
+</head>
+
+<body class="font-sans bg-light text-dark">
+ <header
+    class="fixed top-0 left-0 right-0 w-full z-[60] bg-[var(--color-navy)] text-[var(--color-light)] body-font transition-shadow">
+    <div class="container mx-auto flex items-center justify-between px-4 py-2 h-16">
+      <!-- Logo -->
+      <a href="#" class="flex items-center title-font font-medium">
+        <img src="./assets/R_Secondary 4_PNG3.png" alt="Trio Logo" class="h-10 md:h-12" />
+      </a>
+
+      <!-- Hamburger for mobile -->
+      <button id="menu-btn"
+        class="inline-flex items-center justify-center p-2 text-[var(--color-light)] rounded md:hidden focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+        aria-label="Toggle menu">
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Desktop Menu -->
+      <nav id="menu" class="hidden md:flex md:ml-auto items-center text-base space-x-2">
+        <a href="./index.html" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">Home</a>
+        <a href="./about.html" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">About</a>
+        <a href="./index.html#service" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">Services</a>
+        <a href="#" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">Blog</a>
+        <a href="#" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">Contact Us</a>
+      </nav>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div id="mobile-menu"
+      class="md:hidden bg-[var(--color-navy)] px-4 pb-4 absolute left-0 right-0 top-full z-50 hidden">
+      <nav class="flex flex-col">
+        <a href="./index.html" class="px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Home</a>
+        <a href="./about.html" class="px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">About</a>
+        <a href="./index.html#service" class="px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Services</a>
+        <a href="#" class="px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Blog</a>
+        <a href="#" class="px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Padding to prevent overlap -->
+  <!-- <div class="pt-20"></div>
+
+  Dummy content below 
+  <section class="px-6 py-12">
+    <h1 class="text-3xl font-bold text-center mb-6">Welcome to Trio</h1>
+    <p class="max-w-2xl mx-auto text-center text-gray-600">
+      This is your homepage content. Scroll to see navbar shadow effect.
+    </p>
+    <div class="h-[2000px] mt-10 bg-gradient-to-b from-blue-100 to-green-100 rounded-xl"></div>
+  </section> -->
+
+
+
+
+  <!-- ✅ HERO SECTION SLIDER -->
+    <section class="slider-wrapper relative overflow-hidden h-screen sm:h-[90vh] md:h-[80vh] select-none">
+  <div id="slider" class="slides flex transition-transform duration-700 ease-in-out h-full">
+    <!-- Slide 1 -->
+    <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center text-white"
+      style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80');">
+      <div
+        class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/10 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Harness Solar Energy Efficiently</h2>
+        <p class="text-sm sm:text-base mb-4 sm:mb-6">Eco-friendly solar panels that maximize energy output with minimal footprint.</p>
+        <a href="#solar"
+   class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+          hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
+  Learn More
+</a>
+
+
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center text-white"
+      style="background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1470&q=80');">
+      <div
+        class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/10 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Sustainable Urban Transportation</h2>
+        <p class="text-sm sm:text-base mb-4 sm:mb-6">Electric vehicles and smart grids reduce pollution and carbon footprint.</p>
+        <a href="#transport"
+          class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+          hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
+          Explore Solutions</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center text-white"
+      style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80');">
+      <div
+        class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/10 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Eco-friendly Building Materials</h2>
+        <p class="text-sm sm:text-base mb-4 sm:mb-6">Innovative green materials for a sustainable construction industry.</p>
+        <a href="#building"
+          class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+          hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
+          Discover More</a>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center text-white"
+      style="background-image: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1470&q=80');">
+      <div
+        class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/10 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Reduce Waste, Reuse More</h2>
+        <p class="text-sm sm:text-base mb-4 sm:mb-6">Smart recycling systems turning waste into valuable resources.</p>
+        <a href="#waste"
+          class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+          hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
+          Get Involved</a>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center text-white"
+      style="background-image: url('https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=1470&q=80');">
+      <div
+        class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/10 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Green Energy Storage</h2>
+        <p class="text-sm sm:text-base mb-4 sm:mb-6">Advanced batteries for storing renewable energy efficiently.</p>
+        <a href="#storage"
+          class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+          hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
+          See Solutions</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dot Controls -->
+  <div class="slider-controls absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2 sm:gap-3 z-20">
+    <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="0"></span>
+    <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="1"></span>
+    <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="2"></span>
+    <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="3"></span>
+    <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="4"></span>
+  </div>
+</section>
+
+
+
+<section class="text-gray-700 body-font py-16 px-6 sm:px-10 md:px-20 lg:px-32 font-sans bg-light">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-3">Why Corporates Choose Us</h2>
+    <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto"></div>
+    <p class="text-base sm:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+      Discover how our employee transport services benefit organizations through cost savings, environmental leadership, and smart operations.
+    </p>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <!-- Card 1: Cost-saving -->
+    <div class="bg-white border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
+      <div class="w-16 h-16 mb-4 flex items-center justify-center text-green-500">
+        <!-- Icon: Money/Wallet -->
+        <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a4 4 0 00-8 0v2M5 9h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z"/>
+        </svg>
+      </div>
+      <h4 class="font-semibold text-lg mb-2 text-navy">Cost-saving</h4>
+      <p class="text-gray-600 text-sm">Reduce operational costs by consolidating employee travel with our efficient shared fleet model.</p>
+    </div>
+
+    <!-- Card 2: Green Goals -->
+    <div class="bg-white border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
+      <div class="w-16 h-16 mb-4 flex items-center justify-center text-green-500">
+        <!-- Icon: Leaf/Globe -->
+        <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3C7.03 3 3 7.03 3 12c0 2.97 1.63 5.58 4.09 7.03M12 3v18m0-18c4.97 0 9 4.03 9 9 0 2.97-1.63 5.58-4.09 7.03M12 3c-2.97 0-5.58 1.63-7.03 4.09"/>
+        </svg>
+      </div>
+      <h4 class="font-semibold text-lg mb-2 text-navy">Green Goals</h4>
+      <p class="text-gray-600 text-sm">Support your company’s sustainability mission with our low-emission electric vehicle transport.</p>
+    </div>
+
+    <!-- Card 3: Efficiency -->
+    <div class="bg-white border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
+      <div class="w-16 h-16 mb-4 flex items-center justify-center text-green-500">
+        <!-- Icon: Clock/Process -->
+        <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/>
+        </svg>
+      </div>
+      <h4 class="font-semibold text-lg mb-2 text-navy">Efficiency</h4>
+      <p class="text-gray-600 text-sm">Streamline employee travel logistics with route planning, tracking, and optimized schedules.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="text-gray-700 body-font py-16 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 font-sans bg-white">
+  <!-- Section Heading -->
+  <div class="text-center mb-16">
+    <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-3">How EV Ride Optimization Works</h2>
+    <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto"></div>
+    <p class="text-base sm:text-lg text-gray-600 mt-4 max-w-xl mx-auto">
+      Explore how our system clusters passengers, optimizes routes, and tracks rides to ensure maximum efficiency and eco-friendliness.
+    </p>
+  </div>
+
+  <!-- Content Container -->
+  <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row lg:items-stretch lg:space-x-10 space-y-10 lg:space-y-0">
+    
+    <!-- Left Steps -->
+    <div class="w-full lg:w-1/2 md:pr-0 md:py-0">
+      <!-- Step 1 -->
+      <div class="flex relative pb-12">
+        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gradient-to-b from-green-400 to-blue-500 rounded-full"></div>
+        </div>
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-tr from-green-500 to-blue-600 text-white font-bold inline-flex items-center justify-center z-10">1</div>
+        <div class="flex-grow pl-4">
+          <h2 class="font-semibold text-base text-navy mb-1 tracking-wide">Pickup Clusters Identified</h2>
+          <p class="text-sm leading-relaxed text-gray-700">Nearby passengers are grouped together using smart detection for efficient routing.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="flex relative pb-12">
+        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gradient-to-b from-green-400 to-blue-500 rounded-full"></div>
+        </div>
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-tr from-green-500 to-blue-600 text-white font-bold inline-flex items-center justify-center z-10">2</div>
+        <div class="flex-grow pl-4">
+          <h2 class="font-semibold text-base text-navy mb-1 tracking-wide">Optimal Path Calculated</h2>
+          <p class="text-sm leading-relaxed text-gray-700">Algorithm finds the shortest, most traffic-aware route from source to destination.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flex relative pb-12">
+        <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gradient-to-b from-green-400 to-blue-500 rounded-full"></div>
+        </div>
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-tr from-green-500 to-blue-600 text-white font-bold inline-flex items-center justify-center z-10">3</div>
+        <div class="flex-grow pl-4">
+          <h2 class="font-semibold text-base text-navy mb-1 tracking-wide">Driver Assigned with Tracking</h2>
+          <p class="text-sm leading-relaxed text-gray-700">Drivers are auto-notified and GPS tracking is enabled for live monitoring.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="flex relative">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-tr from-green-500 to-blue-600 text-white font-bold inline-flex items-center justify-center z-10">4</div>
+        <div class="flex-grow pl-4">
+          <h2 class="font-semibold text-base text-navy mb-1 tracking-wide">Reduced Fuel & Time</h2>
+          <p class="text-sm leading-relaxed text-gray-700">Efficient routing minimizes detours, saving cost and environmental impact.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Map -->
+    <div class="w-full lg:w-1/2 rounded-lg overflow-hidden shadow-lg">
+      <iframe
+        class="w-full h-[400px] lg:h-full rounded-lg border-2 border-blue-100"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835243783317!2d-122.41990628468037!3d37.77492927975924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c3b4b5c17%3A0x4d236f26c04bfe!2sSan%20Francisco!5e0!3m2!1sen!2sin!4v1620825418696!5m2!1sen!2sin"
+        loading="lazy"
+        allowfullscreen=""
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="text-gray-600 body-font font-sans bg-light py-16 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-3">Driver Management Overview</h2>
+    <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto"></div>
+  </div>
+
+  <!-- Wrapper to limit card width on large screens -->
+  <div class="max-w-screen-xl mx-auto">
+    <!-- Responsive Grid Container -->
+    <div class="flex flex-wrap -m-4 justify-center">
+      
+      <!-- Card 1 -->
+      <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+        <div class="relative flex border-2 border-blue-100 bg-white rounded-lg p-6 shadow-md sm:flex-row flex-col">
+          <div class="absolute left-0 top-0 h-full w-0.5 rounded-l-md bg-gradient-to-b from-green-400 to-blue-500"></div>
+          <div class="w-12 h-12 sm:mr-6 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 flex-shrink-0 z-10">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <circle cx="12" cy="7" r="4"></circle>
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            </svg>
+          </div>
+          <div class="flex-grow z-10">
+            <h3 class="text-navy text-lg font-semibold mb-2">Background Verified</h3>
+            <p class="text-sm text-gray-700">Each driver is background-checked and verified for safety assurance.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+        <div class="relative flex border-2 border-blue-100 bg-white rounded-lg p-6 shadow-md sm:flex-row flex-col">
+          <div class="absolute left-0 top-0 h-full w-0.5 rounded-l-md bg-gradient-to-b from-green-400 to-blue-500"></div>
+          <div class="w-12 h-12 sm:mr-6 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 flex-shrink-0 z-10">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div class="flex-grow z-10">
+            <h3 class="text-navy text-lg font-semibold mb-2">Real-Time Tracking</h3>
+            <p class="text-sm text-gray-700">GPS tracking allows live monitoring of drivers during every trip.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+        <div class="relative flex border-2 border-blue-100 bg-white rounded-lg p-6 shadow-md sm:flex-row flex-col">
+          <div class="absolute left-0 top-0 h-full w-0.5 rounded-l-md bg-gradient-to-b from-green-400 to-blue-500"></div>
+          <div class="w-12 h-12 sm:mr-6 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 flex-shrink-0 z-10">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M3 13h1l3 3h7l3-3h1v-6H3v6z"></path>
+              <circle cx="7.5" cy="16.5" r="1.5"></circle>
+              <circle cx="16.5" cy="16.5" r="1.5"></circle>
+              <path d="M16 10V6H8v4"></path>
+            </svg>
+          </div>
+          <div class="flex-grow z-10">
+            <h3 class="text-navy text-lg font-semibold mb-2">Efficient Dispatch</h3>
+            <p class="text-sm text-gray-700">Smart algorithms assign nearest available drivers to reduce wait times.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Testimonials Section -->
+<section class="relative bg-[var(--color-navy)] py-16 px-4 sm:px-8 md:px-16 lg:px-32 font-sans">
+  <!-- Section Heading -->
+  <div class="text-center mb-12">
+    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+      Testimonials (from corporate clients)
+    </h2>
+    <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto mb-8"></div>
+  </div>
+
+  <!-- Slider Container -->
+  <div class="max-w-7xl mx-auto">
+    <div
+      id="testimonial-slider"
+      class="flex overflow-x-auto snap-x snap-mandatory gap-6 md:gap-8 scrollbar-hide"
+      style="scroll-behavior: smooth;"
+    >
+      <!-- Card 1 -->
+      <div
+        class="snap-start flex-shrink-0 w-80 sm:w-96 bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-lg border border-white/30 text-white flex flex-col justify-between hover:scale-105 transition duration-300"
+      >
+        <!-- Quote Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-4" viewBox="0 0 24 24">
+          <defs>
+            <linearGradient id="quoteGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#86EFAC" />
+              <stop offset="100%" stop-color="#3B82F6" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#quoteGradient)"
+            d="M7.17 6C5.13 6 3.5 7.62 3.5 9.67c0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 1 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72A3.67 3.67 0 0 0 7.17 6zm9.66 0c-2.05 0-3.67 1.62-3.67 3.67 0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 0 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72a3.67 3.67 0 0 0-1.62-7.34z" />
+        </svg>
+        <p class="mb-6">
+          "Partnering with this team has transformed our fleet management. Their innovative solutions significantly improved our dispatch efficiency and reduced downtime."
+        </p>
+        <div class="flex items-center mt-auto">
+          <img
+            src="https://randomuser.me/api/portraits/women/44.jpg"
+            alt="testimonial"
+            class="w-14 h-14 rounded-full object-cover border-2 border-primary"
+          />
+          <div class="pl-4">
+            <p class="font-bold">Anjali Mehta</p>
+            <p class="text-sm">Operations Manager, TransLogix Corp.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div
+        class="snap-start flex-shrink-0 w-80 sm:w-96 bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-lg border border-white/30 text-white flex flex-col justify-between hover:scale-105 transition duration-300"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-4" viewBox="0 0 24 24">
+          <path fill="url(#quoteGradient)"
+            d="M7.17 6C5.13 6 3.5 7.62 3.5 9.67c0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 1 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72A3.67 3.67 0 0 0 7.17 6zm9.66 0c-2.05 0-3.67 1.62-3.67 3.67 0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 0 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72a3.67 3.67 0 0 0-1.62-7.34z" />
+        </svg>
+        <p class="mb-6">
+          "The real-time tracking and safety features offered exceeded our expectations, giving us peace of mind and greater control over our corporate transportation."
+        </p>
+        <div class="flex items-center mt-auto">
+          <img
+            src="https://randomuser.me/api/portraits/men/35.jpg"
+            alt="testimonial"
+            class="w-14 h-14 rounded-full object-cover border-2 border-primary"
+          />
+          <div class="pl-4">
+            <p class="font-bold">Rohit Sharma</p>
+            <p class="text-sm">Head of Logistics, Global Enterprises</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div
+        class="snap-start flex-shrink-0 w-80 sm:w-96 bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-lg border border-white/30 text-white flex flex-col justify-between hover:scale-105 transition duration-300"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-4" viewBox="0 0 24 24">
+          <path fill="url(#quoteGradient)"
+            d="M7.17 6C5.13 6 3.5 7.62 3.5 9.67c0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 1 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72A3.67 3.67 0 0 0 7.17 6zm9.66 0c-2.05 0-3.67 1.62-3.67 3.67 0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 0 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72a3.67 3.67 0 0 0-1.62-7.34z" />
+        </svg>
+        <p class="mb-6">
+          "Exceptional service and dedicated support have made a remarkable difference in our corporate travel arrangements."
+        </p>
+        <div class="flex items-center mt-auto">
+          <img
+            src="https://randomuser.me/api/portraits/women/29.jpg"
+            alt="testimonial"
+            class="w-14 h-14 rounded-full object-cover border-2 border-primary"
+          />
+          <div class="pl-4">
+            <p class="font-bold">Sneha Kapoor</p>
+            <p class="text-sm">Corporate Relations, TechSolutions Ltd.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+</section>
+
+
+
+<section class="text-dark body-font bg-gradient-to-b from-green-100 via-blue-100 to-white py-24 px-6 sm:px-10 md:px-20 lg:px-32 font-sans">
+  <div class="container mx-auto max-w-2xl">
+    
+    <!-- Heading + Description -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Embedded Lease Form</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto mb-8"></div>
+      <p class="leading-relaxed text-base text-gray-700">
+        Please fill out the form below to get started with your EV lease application.
+      </p>
+    </div>
+
+    <!-- Form Inputs & Button -->
+    <form class="space-y-6">
+
+      <!-- Company Name -->
+      <div>
+        <label for="company-name" class="block text-sm font-medium text-navy mb-1">Company Name</label>
+        <input type="text" id="company-name" name="company-name" placeholder="Company Name"
+          class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm" />
+      </div>
+
+      <!-- Contact Person -->
+      <div>
+        <label for="contact-person" class="block text-sm font-medium text-navy mb-1">Contact Person</label>
+        <input type="text" id="contact-person" name="contact-person" placeholder="Contact Person"
+          class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm" />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-sm font-medium text-navy mb-1">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com"
+          class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm" />
+      </div>
+
+      <!-- Phone -->
+      <div>
+        <label for="phone" class="block text-sm font-medium text-navy mb-1">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210"
+          class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm" />
+      </div>
+
+      <!-- Fleet Size -->
+      <div>
+        <label for="fleet-size" class="block text-sm font-medium text-navy mb-1">Fleet Size</label>
+        <input type="number" id="fleet-size" name="fleet-size" placeholder="Number of vehicles"
+          class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm" />
+      </div>
+
+      <!-- Preferred Start Date -->
+      <div>
+        <label for="start-date" class="block text-sm font-medium text-navy mb-1">Preferred Start Date</label>
+        <input type="date" id="start-date" name="start-date"
+          class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm" />
+      </div>
+
+      <!-- Message/Notes -->
+      <div>
+        <label for="message" class="block text-sm font-medium text-navy mb-1">Message/Notes</label>
+        <textarea id="message" name="message" rows="4" placeholder="Any specific requirements or questions..."
+          class="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 py-2 transition-colors duration-200 ease-in-out shadow-sm resize-none"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="flex items-center justify-center">
+        <button type="submit"
+          class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+          hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
+          Submit Application
+        </button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+
+
+<footer class="bg-[var(--color-navy)] text-[var(--color-light)] body-font px-20 md:px-24 py-10">
+  <div class="container mx-auto">
+    <div class="flex flex-wrap md:text-left text-center order-first">
+      
+      <!-- Column 1 -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6 md:mb-0">
+        <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">CATEGORIES</h2>
+        <nav class="list-none space-y-2">
+          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Link One</a></li>
+          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Link Two</a></li>
+          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Link Three</a></li>
+          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Link Four</a></li>
+        </nav>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6 md:mb-0">
+        <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">RESOURCES</h2>
+        <nav class="list-none space-y-2">
+          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Docs</a></li>
+          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Tutorials</a></li>
+          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Community</a></li>
+          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Support</a></li>
+        </nav>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6 md:mb-0">
+        <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">COMPANY</h2>
+        <nav class="list-none space-y-2">
+          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">About Us</a></li>
+          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Careers</a></li>
+          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Contact</a></li>
+          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Privacy Policy</a></li>
+        </nav>
+      </div>
+
+      <!-- Subscribe Form -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">SUBSCRIBE</h2>
+        <div class="flex flex-col sm:flex-row items-center sm:items-end sm:justify-start">
+          <div class="relative w-full sm:w-auto sm:mr-4 mb-4 sm:mb-0">
+            <label for="footer-field" class="text-sm">Email</label>
+            <input type="text" id="footer-field" name="footer-field"
+              class="w-full bg-white/20 rounded border border-white/30 focus:bg-transparent focus:ring-2 focus:ring-[var(--color-aqua)] focus:border-[var(--color-aqua)] text-[var(--color-light)] py-1 px-3 outline-none transition-colors duration-200 ease-in-out placeholder:text-[var(--color-light)]"
+              placeholder="you@example.com">
+          </div>
+          <button class="bg-[var(--color-aqua)] hover:bg-white text-[var(--color-navy)] font-semibold py-2 px-6 rounded transition duration-300">Subscribe</button>
+        </div>
+        <p class="text-sm mt-2 text-center md:text-left">Get the latest updates and offers.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="bg-white/10 mt-10">
+    <div class="container mx-auto px-5 py-4 flex flex-col sm:flex-row items-center">
+     <a class="flex items-center justify-center font-bold text-[var(--color-aqua)] text-lg">
+  <img src="./assets/R_Secondary 4_PNG3.png" alt="FusionStyle Logo"
+       class="w-20 h-20 object-contain mr-2  " />
+
+</a>
+
+      <p class="text-sm text-[var(--color-light)] sm:ml-6 mt-4 sm:mt-0">© 2025 FusionStyle —
+        <a href="#" class="text-[var(--color-aqua)] ml-1" target="_blank">@fusionteam</a>
+      </p>
+      <span class="inline-flex sm:ml-auto mt-4 sm:mt-0 justify-center sm:justify-start space-x-4">
+        <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+          </svg>
+        </a>
+        <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012.63 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+          <svg fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+            <path d="M18.5 6.5h.01"></path>
+          </svg>
+        </a>
+        <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+            <path
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+            </path>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
