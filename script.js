@@ -1,4 +1,8 @@
-// Toggle mobile menu
+document.addEventListener('DOMContentLoaded', () => {
+  const element = document.querySelector('.some-class');
+  if (element) {
+    element.addEventListener('click', () => {
+     // Toggle mobile menu
 const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('mobile-menu');
 
@@ -326,3 +330,13 @@ function getPositionX(event) {
     ? event.touches[0].clientX
     : event.clientX;
 }
+
+    });
+  }
+});
+
+
+
+
+
+
