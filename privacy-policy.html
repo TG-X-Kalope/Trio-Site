@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trio Website</title>
+
+
+
+  <link href="./dist/output.css" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --color-primary: #32CD32;
+      --color-navy: #0A2540;
+      --color-light: #F5F7FA;
+      --color-aqua: #4FD1C5;
+      --color-dark: #333333;
+    }
+
+
+
+
+    .slide-content {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      max-width: 400px;
+      color: white;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      z-index: 10;
+    }
+
+
+    /* Hide scrollbar but keep scroll functionality */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-light text-dark">
+  <header
+    class="fixed top-0 left-0 right-0 w-full z-[60] bg-[var(--color-navy)] text-[var(--color-light)] body-font transition-shadow">
+    <div class="container mx-auto flex items-center justify-between px-4 py-2 h-16">
+      <!-- Logo -->
+      <a href="./index.html" class="flex items-center title-font font-medium">
+        <img src="./assets/R_Secondary 4_PNG3.png" alt="Trio Logo" class="h-10 md:h-12" />
+      </a>
+
+      <!-- Hamburger for mobile -->
+      <button id="menu-btn"
+        class="inline-flex items-center justify-center p-2 text-[var(--color-light)] rounded md:hidden focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+        aria-label="Toggle menu">
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Desktop Menu -->
+      <nav id="menu" class="hidden md:flex md:ml-auto items-center text-base space-x-2">
+        <a href="./index.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Home</a>
+
+        <a href="./about.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">About</a>
+
+        <a href="#service" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Services</a>
+
+        <a href="./blog.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Blog</a>
+
+        <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
+
+      </nav>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div id="mobile-menu"
+      class="md:hidden bg-[var(--color-navy)] px-4 pb-4 absolute left-0 right-0 top-full z-50 hidden">
+      <nav class="flex flex-col">
+        <a href="#" class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Home</a>
+
+        <a href="./about.html"
+          class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">About</a>
+
+        <a href="#service"
+          class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Services</a>
+
+        <a href="./blog.html"
+          class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Blog</a>
+
+        <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+<section class="py-20 px-6 sm:px-10 md:px-20 lg:px-40 bg-[var(--color-light)]">
+    <div class="max-w-4xl mx-auto">
+ <div class="container mx-auto text-center mb-12">
+
+        <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Privacy Policy</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto mb-8"></div>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-700">
+         At Trio, your privacy is important to us. This Privacy Policy document contains types of information that is collected and recorded by us and how we use it.
+        </p>
+      </div>
+
+     
+      <h2 class="text-xl font-semibold mt-6 mb-2">1. Information We Collect</h2>
+      <p class="mb-4">We may collect personal identification information such as name, email address, phone number, etc., when users visit our site, register, or interact with our services.</p>
+      <h2 class="text-xl font-semibold mt-6 mb-2">2. How We Use Your Information</h2>
+      <ul class="list-disc pl-5 mb-4">
+        <li>To improve our website and services</li>
+        <li>To send periodic emails and updates</li>
+        <li>To respond to customer service requests</li>
+        <li>To personalize user experience</li>
+      </ul>
+      <h2 class="text-xl font-semibold mt-6 mb-2">3. Data Protection</h2>
+      <p class="mb-4">We adopt appropriate data collection, storage, and processing practices and security measures to protect against unauthorized access or disclosure.</p>
+      <h2 class="text-xl font-semibold mt-6 mb-2">4. Sharing Your Information</h2>
+      <p class="mb-4">We do not sell, trade, or rent users' personal identification information to others. We may share aggregated information with trusted affiliates for business purposes.</p>
+      <h2 class="text-xl font-semibold mt-6 mb-2">5. Your Consent</h2>
+      <p>By using our site, you consent to our Privacy Policy.</p>
+    </div>
+  </section>
+
+
+
+  <footer class="bg-[var(--color-navy)] text-[var(--color-light)] body-font px-20 md:px-24 py-10">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap md:text-left text-center order-first">
+
+        <!-- Column 1 -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6 md:mb-0">
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">CATEGORIES</h2>
+          <nav class="list-none space-y-2">
+            <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Link One</a></li>
+            <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Link Two</a></li>
+            <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Link Three</a></li>
+            <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Link Four</a></li>
+          </nav>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6 md:mb-0">
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">RESOURCES</h2>
+          <nav class="list-none space-y-2">
+            <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Docs</a></li>
+            <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Tutorials</a></li>
+            <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Community</a></li>
+            <li><a class="hover:text-[var(--color-aqua)] cursor-pointer">Support</a></li>
+          </nav>
+        </div>
+
+          <!-- Column 3 -->
+<div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6 md:mb-0">
+  <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">COMPANY</h2>
+  <nav class="list-none space-y-2">
+    <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./about.html">About Us</a></li>
+    <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./careers.html">Careers</a></li>
+    <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./contact.html">Contact</a></li>
+    <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./privacy-policy.html">Privacy Policy</a></li>
+    <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./t&c.html">Terms & Conditions</a></li>
+    <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./refund-policy.html">Refund Policy</a></li>
+  </nav>
+</div>
+
+        <!-- Subscribe Form -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">SUBSCRIBE</h2>
+          <div class="flex flex-col sm:flex-row items-center sm:items-end sm:justify-start">
+            <div class="relative w-full sm:w-auto sm:mr-4 mb-4 sm:mb-0">
+              <label for="footer-field" class="text-sm">Email</label>
+              <input type="text" id="footer-field" name="footer-field"
+                class="w-full bg-white/20 rounded border border-white/30 focus:bg-transparent focus:ring-2 focus:ring-[var(--color-aqua)] focus:border-[var(--color-aqua)] text-[var(--color-light)] py-1 px-3 outline-none transition-colors duration-200 ease-in-out placeholder:text-[var(--color-light)]"
+                placeholder="you@example.com">
+            </div>
+            <button
+              class="bg-[var(--color-aqua)] hover:bg-white text-[var(--color-navy)] font-semibold py-2 px-6 rounded transition duration-300">Subscribe</button>
+          </div>
+          <p class="text-sm mt-2 text-center md:text-left">Get the latest updates and offers.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bg-white/10 mt-10">
+      <div class="container mx-auto px-5 py-4 flex flex-col sm:flex-row items-center">
+        <a class="flex items-center justify-center font-bold text-[var(--color-aqua)] text-lg">
+          <img src="./assets/R_Secondary 4_PNG3.png" alt="FusionStyle Logo" class="w-20 h-20 object-contain mr-2  " />
+
+        </a>
+
+        <p class="text-sm text-[var(--color-light)] sm:ml-6 mt-4 sm:mt-0">© 2025 FusionStyle —
+          <a href="#" class="text-[var(--color-aqua)] ml-1" target="_blank">@fusionteam</a>
+        </p>
+        <span class="inline-flex sm:ml-auto mt-4 sm:mt-0 justify-center sm:justify-start space-x-4">
+          <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+            </svg>
+          </a>
+          <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012.63 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+              <path d="M18.5 6.5h.01"></path>
+            </svg>
+          </a>
+          <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+              </path>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
