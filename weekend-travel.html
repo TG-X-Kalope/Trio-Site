@@ -56,50 +56,75 @@
 </head>
 
 <body class="font-sans bg-light text-dark">
-  <header
-    class="fixed top-0 left-0 right-0 w-full z-[60] bg-[var(--color-navy)] text-[var(--color-light)] body-font transition-shadow">
-    <div class="container mx-auto flex items-center justify-between px-4 py-2 h-16">
-      <!-- Logo -->
-      <a href="#" class="flex items-center title-font font-medium">
-        <img src="./assets/R_Secondary 4_PNG3.png" alt="Trio Logo" class="h-10 md:h-12" />
-      </a>
+ <header
+  class="fixed top-0 left-0 right-0 w-full z-[60] bg-[var(--color-navy)] text-[var(--color-light)] body-font transition-shadow">
+  <div class="container mx-auto flex items-center justify-between px-4 py-2 h-16">
+    <!-- Logo -->
+    <a href="./index.html" class="flex items-center title-font font-medium">
+      <img src="./assets/R_Secondary 4_PNG3.png" alt="Trio Logo" class="h-10 md:h-12" />
+    </a>
 
-      <!-- Hamburger for mobile -->
-      <button id="menu-btn"
-        class="inline-flex items-center justify-center p-2 text-[var(--color-light)] rounded md:hidden focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
-        aria-label="Toggle menu">
-        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-          stroke-linejoin="round" viewBox="0 0 24 24">
-          <path d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
+    <!-- Hamburger for mobile -->
+    <button id="menu-btn"
+      class="inline-flex items-center justify-center p-2 text-[var(--color-light)] rounded md:hidden focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+      aria-label="Toggle menu">
+      <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
 
-      <!-- Desktop Menu -->
-      <nav id="menu" class="hidden md:flex md:ml-auto items-center text-base space-x-2">
-        <a href="./index.html" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">Home</a>
-        <a href="./about.html" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">About</a>
-        <a href="./index.html#service"
-          class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">Services</a>
-        <a href="#" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">Blog</a>
-        <a href="#" class="px-3 py-2 hover:text-[var(--color-primary)] transition-colors">Contact Us</a>
-      </nav>
-    </div>
+    <!-- Desktop Menu -->
+    <nav id="menu" class="hidden md:flex md:ml-auto items-center text-base space-x-2 relative">
+      <a href="./index.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Home</a>
+      <a href="./about.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">About</a>
 
-    <!-- Mobile dropdown -->
-    <div id="mobile-menu"
-      class="md:hidden bg-[var(--color-navy)] px-4 pb-4 absolute left-0 right-0 top-full z-50 hidden">
-      <nav class="flex flex-col">
-        <a href="./index.html"
-          class="px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Home</a>
-        <a href="./about.html"
-          class="px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">About</a>
-        <a href="./index.html#service"
-          class="px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Services</a>
-        <a href="#" class="px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Blog</a>
-        <a href="#" class="px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
-      </nav>
-    </div>
-  </header>
+      <!-- Services Dropdown -->
+      <div class="relative group">
+        <button
+          class="nav-link px-3 py-2 hover:text-[var(--color-primary)] flex items-center gap-1">
+          Services
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+        <div
+          class="absolute left-0 mt-2 w-56 bg-[var(--color-navy)] text-[var(--color-light)] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+          <a href="./ev-service.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
+          <a href="./cor-empl-transport.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Employee Transport</a>
+          <a href="./evCharging.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
+          <a href="./weekend-travel.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Weekend EV Rentals</a>
+          <a href="./" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Logistic Service</a>
+        </div>
+      </div>
+
+      <a href="./blog.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Blog</a>
+      <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
+    </nav>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <div id="mobile-menu"
+    class="md:hidden bg-[var(--color-navy)] px-4 pb-4 absolute left-0 right-0 top-full z-50 hidden">
+    <nav class="flex flex-col">
+      <a href="./index.html" class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Home</a>
+      <a href="./about.html" class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">About</a>
+
+      <!-- Mobile Services dropdown -->
+      <div class="flex flex-col border-b border-[var(--color-primary)]">
+        <span class="px-3 py-2">Services</span>
+        <a href="./ev-service.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
+        <a href="./cor-empl-transport.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Employee Transport</a>
+        <a href="./evCharging.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
+        <a href="./weekend-travel.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Weekend EV Rentals</a>
+        <a href="./ev-logistic.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Logistic Service</a>
+      </div>
+
+      <a href="./blog.html" class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Blog</a>
+      <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
+    </nav>
+  </div>
+</header>
 
 
 
@@ -524,7 +549,7 @@
         <nav class="list-none space-y-2">
           <li><a href="./ev-service.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Vehicle Leasing</a></li>
           <li><a href="./cor-empl-transport.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Employee Transport</a></li>
-          <li><a href="./EV Charging.html" class="hover:text-[var(--color-aqua)] cursor-pointer">EV Charging</a></li>
+          <li><a href="./evCharging.html" class="hover:text-[var(--color-aqua)] cursor-pointer">EV Charging</a></li>
           <li><a href="./weekend-travel.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Weekend EV Rentals</a></li>
         </nav>
       </div>
@@ -557,46 +582,53 @@
 
   <!-- Bottom Bar -->
   <div class="bg-white/10 mt-8">
-    <div class="container mx-auto px-5 py-4 flex flex-col sm:flex-row items-center justify-between">
-      
-      <!-- Logo & Name -->
-      <div class="flex items-center justify-center sm:justify-start mb-4 sm:mb-0">
-        <img src="./assets/R_Secondary 4_PNG3.png" alt="FusionStyle Logo" class="w-14 h-14 object-contain mr-2" />
-      </div>
+      <div class="container mx-auto px-5 py-4 flex flex-col sm:flex-row items-center justify-between">
 
-      <!-- Copyright -->
-      <p class="text-sm text-center sm:text-left text-[var(--color-light)]">© 2025 Thundergits —
-        <a href="#" class="text-[var(--color-aqua)] ml-1" target="_blank">@thundergitsteam</a>
-      </p>
+        <!-- Logo & Name -->
+        <div class="flex items-center justify-center sm:justify-start mb-4 sm:mb-0">
+          <img src="./assets/R_Secondary 4_PNG3.png" alt="FusionStyle Logo" class="w-14 h-14 object-contain mr-2" />
+        </div>
 
-      <!-- Social Icons -->
-      <div class="flex justify-center sm:justify-end space-x-4 mt-4 sm:mt-0">
-        <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="https://www.facebook.com/profile.php?id=61578890532007">
-          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-          </svg>
-        </a>
-        <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
-          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012.63 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-          </svg>
-        </a>
-        <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
-          <svg fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
-            <path d="M18.5 6.5h.01"></path>
-          </svg>
-        </a>
-        <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
-          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-            <circle cx="4" cy="4" r="2"></circle>
-          </svg>
-        </a>
+        <!-- Copyright -->
+        <div class="text-center sm:text-left">
+          <p class="text-sm text-[var(--color-light)]">© 2025 Trio — All Rights Reserved</p>
+          <p class="text-xs text-[var(--color-light)] mt-1">
+            Designed & Developed by
+            <a href="#" class="text-[var(--color-aqua)] ml-1" target="_blank">@thundergits</a>
+          </p>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex justify-center sm:justify-end space-x-4 mt-4 sm:mt-0">
+          <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]"
+            href="https://www.facebook.com/profile.php?id=61578890532007">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+            </svg>
+          </a>
+          <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012.63 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+              <path d="M18.5 6.5h.01"></path>
+            </svg>
+          </a>
+          <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 </footer>
 
 
