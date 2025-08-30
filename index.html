@@ -60,78 +60,85 @@
 <body class="font-sans bg-light text-dark">
 
 
-<header
-  class="fixed top-0 left-0 right-0 w-full z-[60] bg-[var(--color-navy)] text-[var(--color-light)] body-font transition-shadow">
-  <div class="container mx-auto flex items-center justify-between px-4 py-2 h-16">
-    <!-- Logo -->
-    <a href="./index.html" class="flex items-center title-font font-medium">
-      <img src="./assets/R_Secondary 4_PNG3.png" alt="Trio Logo" class="h-10 md:h-12" />
-    </a>
+  <header
+    class="fixed top-0 left-0 right-0 w-full z-[60] bg-[var(--color-navy)] text-[var(--color-light)] body-font transition-shadow">
+    <div class="container mx-auto flex items-center justify-between px-4 py-2 h-16">
+      <!-- Logo -->
+      <a href="./index.html" class="flex items-center title-font font-medium">
+        <img src="./assets/R_Secondary 4_PNG3.png" alt="Trio Logo" class="h-10 md:h-12" />
+      </a>
 
-    <!-- Hamburger for mobile -->
-    <button id="menu-btn"
-      class="inline-flex items-center justify-center p-2 text-[var(--color-light)] rounded md:hidden focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
-      aria-label="Toggle menu">
-      <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round" viewBox="0 0 24 24">
-        <path d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
+      <!-- Hamburger for mobile -->
+      <button id="menu-btn"
+        class="inline-flex items-center justify-center p-2 text-[var(--color-light)] rounded md:hidden focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+        aria-label="Toggle menu">
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
 
-    <!-- Desktop Menu -->
-    <nav id="menu" class="hidden md:flex md:ml-auto items-center text-base space-x-2 relative">
-      <a href="./index.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Home</a>
-      <a href="./about.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">About</a>
+      <!-- Desktop Menu -->
+      <nav id="menu" class="hidden md:flex md:ml-auto items-center text-base space-x-2 relative">
+        <a href="./index.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Home</a>
+        <a href="./about.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">About</a>
 
-      <!-- Services Dropdown -->
-      <div class="relative group">
-        <button
-          class="nav-link px-3 py-2 hover:text-[var(--color-primary)] flex items-center gap-1">
-          Services
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </button>
-        <div
-          class="absolute left-0 mt-2 w-56 bg-[var(--color-navy)] text-[var(--color-light)] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-          <a href="./ev-service.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
-          <a href="./cor-empl-transport.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Employee Transport</a>
-          <a href="./evCharging.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
-          <a href="./weekend-travel.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Weekend EV Rentals</a>
-          <a href="./" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Logistic Service</a>
+        <!-- Services Dropdown -->
+        <div class="relative group">
+          <button class="nav-link px-3 py-2 hover:text-[var(--color-primary)] flex items-center gap-1">
+            Services
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 mt-2 w-56 bg-[var(--color-navy)] text-[var(--color-light)] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <a href="./ev-service.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
+            <a href="./cor-empl-transport.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Employee
+              Transport</a>
+            <a href="./evCharging.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
+            <a href="./weekend-travel.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Weekend EV
+              Rentals</a>
+            <a href="./" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Logistic Service</a>
+          </div>
         </div>
-      </div>
 
-      <a href="./blog.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Blog</a>
-      <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
-    </nav>
-  </div>
+        <a href="./blog.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Blog</a>
+        <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
+      </nav>
+    </div>
 
-  <!-- Mobile dropdown -->
-  <div id="mobile-menu"
-    class="md:hidden bg-[var(--color-navy)] px-4 pb-4 absolute left-0 right-0 top-full z-50 hidden">
-    <nav class="flex flex-col">
-      <a href="./index.html" class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Home</a>
-      <a href="./about.html" class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">About</a>
+    <!-- Mobile dropdown -->
+    <div id="mobile-menu"
+      class="md:hidden bg-[var(--color-navy)] px-4 pb-4 absolute left-0 right-0 top-full z-50 hidden">
+      <nav class="flex flex-col">
+        <a href="./index.html"
+          class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Home</a>
+        <a href="./about.html"
+          class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">About</a>
 
-      <!-- Mobile Services dropdown -->
-      <div class="flex flex-col border-b border-[var(--color-primary)]">
-        <span class="px-3 py-2">Services</span>
-        <a href="./ev-service.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
-        <a href="./cor-empl-transport.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Employee Transport</a>
-        <a href="./evCharging.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
-        <a href="./weekend-travel.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Weekend EV Rentals</a>
-        <a href="./ev-logistic.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Logistic Service</a>
-      </div>
+        <!-- Mobile Services dropdown -->
+        <div class="flex flex-col border-b border-[var(--color-primary)]">
+          <span class="px-3 py-2">Services</span>
+          <a href="./ev-service.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
+          <a href="./cor-empl-transport.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Employee
+            Transport</a>
+          <a href="./evCharging.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
+          <a href="./weekend-travel.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Weekend EV
+            Rentals</a>
+          <a href="./ev-logistic.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Logistic
+            Service</a>
+        </div>
 
-      <a href="./blog.html" class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Blog</a>
-      <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
-    </nav>
-  </div>
-</header>
+        <a href="./blog.html"
+          class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Blog</a>
+        <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
+      </nav>
+    </div>
+  </header>
 
 
- 
+
 
   <!-- ✅ HERO SECTION SLIDER -->
   <section class="slider-wrapper relative overflow-hidden h-screen sm:h-[90vh] md:h-[90vh] select-none">
@@ -149,7 +156,7 @@
           <a href="./ev-service.html"
             class="inline-block mt-3 px-6 py-2 text-[var(--color-navy)] text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm hover:bg-[var(--color-navy)] hover:text-white transition duration-300 ease-in-out">Start
             Leasing</a>
-                      <div class="absolute bottom-0 left-0 w-1/4 h-0.5 bg-white opacity-70 rounded-l-full"></div>
+          <div class="absolute bottom-0 left-0 w-1/4 h-0.5 bg-white opacity-70 rounded-l-full"></div>
           <div class="absolute bottom-0 right-0 w-1/4 h-0.5 bg-white opacity-70 rounded-r-full"></div>
         </div>
       </div>
@@ -229,7 +236,7 @@
     </div>
   </section>
 
-  
+
 
   <!-- ✅ Service Section -->
   <section id="service" class="text-dark body-font bg-white font-sans px-8 sm:px-10 md:px-14 lg:px-28 py-10">
@@ -342,29 +349,29 @@
         </div>
 
         <!-- Card 5: EV Logistic Service -->
-<div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-  <div class="rounded-sm overflow-hidden shadow-md h-full flex flex-col bg-light">
-    <div class="w-full overflow-hidden">
-      <img alt="EV Logistic Service" class="object-cover object-center w-full h-36 sm:h-40 md:h-44"
-        src="./assets/Lease Your EV & Earn Passively.jpg" />
-      <div class="h-0.5 w-full bg-gradient-to-r from-green-300 to-blue-500"></div>
-    </div>
-    <div class="flex flex-col flex-1 justify-start px-4 pt-6 pb-4 gap-2">
-      <h3 class="text-lg sm:text-xl font-semibold text-navy">EV Logistic Service</h3>
-      <p class="text-sm sm:text-base text-dark opacity-70 leading-relaxed">
-        Efficient middle-mile delivery for mini drugs and quick services, tailored for platforms like Blinkit.
-      </p>
-      <div class="mt-auto flex justify-center">
-        <a href="./ev-logistic.html">
-          <button
-            class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
-            Learn More
-          </button>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div class="rounded-sm overflow-hidden shadow-md h-full flex flex-col bg-light">
+            <div class="w-full overflow-hidden">
+              <img alt="EV Logistic Service" class="object-cover object-center w-full h-36 sm:h-40 md:h-44"
+                src="./assets/Lease Your EV & Earn Passively.jpg" />
+              <div class="h-0.5 w-full bg-gradient-to-r from-green-300 to-blue-500"></div>
+            </div>
+            <div class="flex flex-col flex-1 justify-start px-4 pt-6 pb-4 gap-2">
+              <h3 class="text-lg sm:text-xl font-semibold text-navy">EV Logistic Service</h3>
+              <p class="text-sm sm:text-base text-dark opacity-70 leading-relaxed">
+                Efficient middle-mile delivery for mini drugs and quick services, tailored for platforms like Blinkit.
+              </p>
+              <div class="mt-auto flex justify-center">
+                <a href="./ev-logistic.html">
+                  <button
+                    class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
+                    Learn More
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -508,7 +515,7 @@
               <img src="./assets/kpmclogo-removebg-preview.png" alt="Logo 4"
                 class="object-contain w-full h-24 md:h-28 grayscale hover:grayscale-0 transition duration-300" />
             </div>
-              <div class="flex-shrink-0 w-36 sm:w-40 md:w-48 mx-auto">
+            <div class="flex-shrink-0 w-36 sm:w-40 md:w-48 mx-auto">
               <img src="./assets/cytechlogo-removebg-preview.png" alt="Logo 4"
                 class="object-contain w-full h-24 md:h-28 grayscale hover:grayscale-0 transition duration-300" />
             </div>
@@ -516,7 +523,7 @@
               <img src="./assets/Indigologo.png" alt="Logo 5"
                 class="object-contain w-full h-24 md:h-28 grayscale hover:grayscale-0 transition duration-300" />
             </div>
-           
+
           </div>
         </div>
 
@@ -574,6 +581,7 @@
   <!-- <h1 class="text-3xl font-bold text-navy text-center mb-12 mt-10">Testimonials</h1> -->
 
   <!-- Testimonials Section -->
+  <!-- Testimonials Section -->
   <section class="relative bg-[var(--color-navy)] py-16 px-4 sm:px-8 md:px-16 lg:px-32 font-sans">
     <!-- Section Heading -->
     <div class="text-center mb-12">
@@ -583,147 +591,313 @@
       <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto mb-8"></div>
     </div>
 
+    <!-- Slider Row -->
+    <div class="flex items-center justify-center gap-4">
 
+      <!-- Left Arrow -->
+      <button id="slideLeft" class="p-3 bg-white/20 hover:bg-white/30 rounded-full text-white shadow-lg">
+        &#8592;
+      </button>
 
+      <!-- Cards Wrapper -->
+      <div id="cardWrapper" class="overflow-hidden w-full max-w-6xl">
 
-    <!-- Slider Container -->
-    <div class="max-w-7xl mx-auto">
-      <div id="testimonial-slider" class="flex overflow-x-auto snap-x snap-mandatory gap-6 md:gap-8 scrollbar-hide"
-        style="scroll-behavior: smooth;">
+        <!-- Inner flex for cards -->
+        <div class="flex transition-transform duration-500 ease-in-out" id="cardTrack">
 
-        <!-- Card 1 -->
-        <div
-          class="snap-start flex-shrink-0 w-80 sm:w-96 bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-lg border border-white/30 text-white flex flex-col justify-between hover:scale-105 transition duration-300">
-          <!-- Quote Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-4" viewBox="0 0 24 24">
-            <defs>
-              <linearGradient id="quoteGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#86EFAC" />
-                <stop offset="100%" stop-color="#3B82F6" />
-              </linearGradient>
-            </defs>
-            <path fill="url(#quoteGradient)"
-              d="M7.17 6C5.13 6 3.5 7.62 3.5 9.67c0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 1 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72A3.67 3.67 0 0 0 7.17 6zm9.66 0c-2.05 0-3.67 1.62-3.67 3.67 0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 0 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72a3.67 3.67 0 0 0-1.62-7.34z" />
-          </svg>
-          <p class="mb-6"> TRIO EV ने हमारी employee commute को पूरी तरह hassle-free बना दिया। समय पर pickup, clean
-            vehicles और zero-emission rides – सब कुछ perfect!
-          </p>
-          <div class="flex items-center mt-auto">
-            <img src="https://dummyimage.com/106x106" alt="testimonial" class="w-14 h-14 rounded-full object-cover " />
-            <div class="pl-4">
-              <p class="font-bold">Priya Sharma</p>
-              <p class="text-sm">HR Manager, FinTech Solutions</p>
+          <!-- Example Card (repeat for all 5 cards) -->
+          <!-- Card 1 -->
+          <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 box-border px-2">
+            <div class="testimonial-card min-h-[300px] h-full bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-2xl 
+           shadow-lg border border-white/30 text-white flex flex-col justify-between 
+           hover:scale-105 transition duration-300">
+
+              <!-- Quote Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-4" viewBox="0 0 24 24">
+                <defs>
+                  <linearGradient id="quoteGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#34d399" />
+                    <stop offset="100%" stop-color="#3b82f6" />
+                  </linearGradient>
+                </defs>
+                <path fill="url(#quoteGradient)" d="M7.17 6C5.13 6 3.5 7.62 3.5 9.67c0 2.05 
+           1.62 3.67 3.67 3.67-.21 1.4-.78 
+           2.59-1.81 3.68a.75.75 0 1 0 
+           1.08 1.04c1.31-1.36 
+           2.1-2.92 2.35-4.72A3.67 
+           3.67 0 0 0 7.17 6zm9.66 
+           0c-2.05 0-3.67 1.62-3.67 
+           3.67 0 2.05 1.62 3.67 
+           3.67 3.67-.21 1.4-.78 
+           2.59-1.81 3.68a.75.75 
+           0 0 0 1.08 1.04c1.31-1.36 
+           2.1-2.92 2.35-4.72a3.67 
+           3.67 0 0 0-1.62-7.34z" />
+              </svg>
+
+              <!-- Text -->
+              <p class="mb-6 italic leading-relaxed">
+                TRIO EV ने हमारी employee commute को पूरी तरह hassle-free बना दिया।
+                समय पर pickup, clean vehicles और zero-emission rides – सब कुछ perfect!
+              </p>
+
+              <!-- Profile -->
+              <div class="flex items-center mt-auto">
+                <img src="https://dummyimage.com/106x106" alt="testimonial"
+                  class="w-14 h-14 rounded-full object-cover border-2 border-green-400 shadow-md" />
+                <div class="pl-4">
+                  <p class="font-bold">Priya Sharma</p>
+                  <p class="text-sm">HR Manager, FinTech Solutions</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div
-          class="snap-start flex-shrink-0 w-80 sm:w-96 bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-lg border border-white/30 text-white flex flex-col justify-between hover:scale-105 transition duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-4" viewBox="0 0 24 24">
-            <path fill="url(#quoteGradient)"
-              d="M7.17 6C5.13 6 3.5 7.62 3.5 9.67c0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 1 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72A3.67 3.67 0 0 0 7.17 6zm9.66 0c-2.05 0-3.67 1.62-3.67 3.67 0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 0 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72a3.67 3.67 0 0 0-1.62-7.34z" />
-          </svg>
-          <p class="mb-6"> अपने EV को TRIO के साथ lease पर लगाकर passive income कमाना बहुत आसान हो गया। उनका platform
-            transparent और reliable है।
-          </p>
-          <div class="flex items-center mt-auto">
-            <img src="https://dummyimage.com/106x106" alt="testimonial" class="w-14 h-14 rounded-full object-cover " />
-            <div class="pl-4">
-              <p class="font-bold">Amit Patelh</p>
-              <p class="text-sm">Fleet Owner</p>
+          <!-- Card 2 -->
+          <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 box-border px-2">
+            <div class="testimonial-card min-h-[300px] h-full bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-2xl 
+           shadow-lg border border-white/30 text-white flex flex-col justify-between 
+           hover:scale-105 transition duration-300">
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-4" viewBox="0 0 24 24">
+                <path fill="url(#quoteGradient)" d="M7.17 6C5.13 6 3.5 7.62 3.5 
+           9.67c0 2.05 1.62 3.67 3.67 
+           3.67-.21 1.4-.78 2.59-1.81 
+           3.68a.75.75 0 1 0 1.08 
+           1.04c1.31-1.36 2.1-2.92 
+           2.35-4.72A3.67 3.67 
+           0 0 0 7.17 6zm9.66 0c-2.05 
+           0-3.67 1.62-3.67 3.67 0 2.05 
+           1.62 3.67 3.67 3.67-.21 1.4-.78 
+           2.59-1.81 3.68a.75.75 0 0 0 
+           1.08 1.04c1.31-1.36 2.1-2.92 
+           2.35-4.72a3.67 3.67 
+           0 0 0-1.62-7.34z" />
+              </svg>
+
+              <p class="mb-6 italic leading-relaxed">
+                अपने EV को TRIO के साथ lease पर लगाकर passive income कमाना बहुत आसान हो गया।
+                उनका platform transparent और reliable है।
+              </p>
+
+              <div class="flex items-center mt-auto">
+                <img src="https://dummyimage.com/106x106" alt="testimonial"
+                  class="w-14 h-14 rounded-full object-cover border-2 border-green-400 shadow-md" />
+                <div class="pl-4">
+                  <p class="font-bold">Amit Patelh</p>
+                  <p class="text-sm">Fleet Owner</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div
-          class="snap-start flex-shrink-0 w-80 sm:w-96 bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-lg border border-white/30 text-white flex flex-col justify-between hover:scale-105 transition duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-4" viewBox="0 0 24 24">
-            <path fill="url(#quoteGradient)"
-              d="M7.17 6C5.13 6 3.5 7.62 3.5 9.67c0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 1 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72A3.67 3.67 0 0 0 7.17 6zm9.66 0c-2.05 0-3.67 1.62-3.67 3.67 0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 0 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72a3.67 3.67 0 0 0-1.62-7.34z" />
-          </svg>
-          <p class="mb-6">
-            हमारी पूरी टीम के लिए sustainable transport चाहिए था। TRIO EV ने affordable और eco-friendly solutions
-            provide किए।
-          </p>
-          <div class="flex items-center mt-auto">
-            <img src="https://dummyimage.com/106x106" alt="testimonial" class="w-14 h-14 rounded-full object-cover" />
-            <div class="pl-4">
-              <p class="font-bold">Rohan Mehra</p>
-              <p class="text-sm">Startup Founder</p>
+          <!-- Card 3 -->
+          <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 box-border px-2">
+            <div class="testimonial-card min-h-[300px] h-full bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-2xl 
+           shadow-lg border border-white/30 text-white flex flex-col justify-between 
+           hover:scale-105 transition duration-300">
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-4" viewBox="0 0 24 24">
+                <path fill="url(#quoteGradient)" d="M7.17 6C5.13 6 3.5 7.62 3.5 
+           9.67c0 2.05 1.62 3.67 3.67 
+           3.67-.21 1.4-.78 2.59-1.81 
+           3.68a.75.75 0 1 0 1.08 
+           1.04c1.31-1.36 2.1-2.92 
+           2.35-4.72A3.67 3.67 
+           0 0 0 7.17 6zm9.66 0c-2.05 
+           0-3.67 1.62-3.67 3.67 0 2.05 
+           1.62 3.67 3.67 3.67-.21 1.4-.78 
+           2.59-1.81 3.68a.75.75 0 0 0 
+           1.08 1.04c1.31-1.36 2.1-2.92 
+           2.35-4.72a3.67 3.67 
+           0 0 0-1.62-7.34z" />
+              </svg>
+
+              <p class="mb-6 italic leading-relaxed">
+                हमारी पूरी टीम के लिए sustainable transport चाहिए था।
+                TRIO EV ने affordable और eco-friendly solutions provide किए।
+              </p>
+
+              <div class="flex items-center mt-auto">
+                <img src="https://dummyimage.com/106x106" alt="testimonial"
+                  class="w-14 h-14 rounded-full object-cover border-2 border-green-400 shadow-md" />
+                <div class="pl-4">
+                  <p class="font-bold">Rohan Mehra</p>
+                  <p class="text-sm">Startup Founder</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
+          <!-- Card 4 -->
+          <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 box-border px-2">
+            <div class="testimonial-card min-h-[300px] h-full bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-2xl 
+           shadow-lg border border-white/30 text-white flex flex-col justify-between 
+           hover:scale-105 transition duration-300">
 
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-4" viewBox="0 0 24 24">
+                <path fill="url(#quoteGradient)" d="M7.17 6C5.13 6 3.5 7.62 3.5 
+           9.67c0 2.05 1.62 3.67 3.67 
+           3.67-.21 1.4-.78 2.59-1.81 
+           3.68a.75.75 0 1 0 1.08 
+           1.04c1.31-1.36 2.1-2.92 
+           2.35-4.72A3.67 3.67 
+           0 0 0 7.17 6zm9.66 0c-2.05 
+           0-3.67 1.62-3.67 3.67 0 2.05 
+           1.62 3.67 3.67 3.67-.21 1.4-.78 
+           2.59-1.81 3.68a.75.75 0 0 0 
+           1.08 1.04c1.31-1.36 2.1-2.92 
+           2.35-4.72a3.67 3.67 
+           0 0 0-1.62-7.34z" />
+              </svg>
 
-        <div
-          class="snap-start flex-shrink-0 w-80 sm:w-96 bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-lg border border-white/30 text-white flex flex-col justify-between hover:scale-105 transition duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-4" viewBox="0 0 24 24">
-            <path fill="url(#quoteGradient)"
-              d="M7.17 6C5.13 6 3.5 7.62 3.5 9.67c0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 1 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72A3.67 3.67 0 0 0 7.17 6zm9.66 0c-2.05 0-3.67 1.62-3.67 3.67 0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 0 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72a3.67 3.67 0 0 0-1.62-7.34z" />
-          </svg>
-          <p class="mb-6">
-            EV charging network की वजह से हमें कभी range anxiety नहीं हुई। TRIO की services ने smooth travel ensure
-            किया।
-          </p>
-          <div class="flex items-center mt-auto">
-            <img src="https://dummyimage.com/106x106" alt="testimonial" class="w-14 h-14 rounded-full object-cover" />
-            <div class="pl-4">
-              <p class="font-bold">Sangeeta Verma</p>
-              <p class="text-sm">Corporate Admin</p>
+              <p class="mb-6 italic leading-relaxed">
+                EV charging network की वजह से हमें कभी range anxiety नहीं हुई।
+                TRIO की services ने smooth travel ensure किया।
+              </p>
+
+              <div class="flex items-center mt-auto">
+                <img src="https://dummyimage.com/106x106" alt="testimonial"
+                  class="w-14 h-14 rounded-full object-cover border-2 border-green-400 shadow-md" />
+                <div class="pl-4">
+                  <p class="font-bold">Sangeeta Verma</p>
+                  <p class="text-sm">Corporate Admin</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
+          <!-- Card 5 -->
+          <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 box-border px-2">
+            <div class="testimonial-card min-h-[300px] h-full bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-2xl 
+           shadow-lg border border-white/30 text-white flex flex-col justify-between 
+           hover:scale-105 transition duration-300">
 
-        <div
-          class="snap-start flex-shrink-0 w-80 sm:w-96 bg-white/20 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-lg border border-white/30 text-white flex flex-col justify-between hover:scale-105 transition duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-4" viewBox="0 0 24 24">
-            <path fill="url(#quoteGradient)"
-              d="M7.17 6C5.13 6 3.5 7.62 3.5 9.67c0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 1 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72A3.67 3.67 0 0 0 7.17 6zm9.66 0c-2.05 0-3.67 1.62-3.67 3.67 0 2.05 1.62 3.67 3.67 3.67-.21 1.4-.78 2.59-1.81 3.68a.75.75 0 0 0 1.08 1.04c1.31-1.36 2.1-2.92 2.35-4.72a3.67 3.67 0 0 0-1.62-7.34z" />
-          </svg>
-          <p class="mb-6">
-            हमारी पूरी टीम के लिए sustainable transport चाहिए था। TRIO EV ने affordable और eco-friendly solutions
-            provide किए।
-          </p>
-          <div class="flex items-center mt-auto">
-            <img src="https://dummyimage.com/106x106" alt="testimonial" class="w-14 h-14 rounded-full object-cover" />
-            <div class="pl-4">
-              <p class="font-bold">Rohan Mehra</p>
-              <p class="text-sm">Startup Founder</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mb-4" viewBox="0 0 24 24">
+                <path fill="url(#quoteGradient)" d="M7.17 6C5.13 6 3.5 7.62 3.5 
+           9.67c0 2.05 1.62 3.67 3.67 
+           3.67-.21 1.4-.78 2.59-1.81 
+           3.68a.75.75 0 1 0 1.08 
+           1.04c1.31-1.36 2.1-2.92 
+           2.35-4.72A3.67 3.67 
+           0 0 0 7.17 6zm9.66 0c-2.05 
+           0-3.67 1.62-3.67 3.67 0 2.05 
+           1.62 3.67 3.67 3.67-.21 1.4-.78 
+           2.59-1.81 3.68a.75.75 0 0 0 
+           1.08 1.04c1.31-1.36 2.1-2.92 
+           2.35-4.72a3.67 3.67 
+           0 0 0-1.62-7.34z" />
+              </svg>
+
+              <p class="mb-6 italic leading-relaxed">
+                हमारी पूरी टीम के लिए sustainable transport चाहिए था।
+                TRIO EV ने affordable और eco-friendly solutions provide किए।
+              </p>
+
+              <div class="flex items-center mt-auto">
+                <img src="https://dummyimage.com/106x106" alt="testimonial"
+                  class="w-14 h-14 rounded-full object-cover border-2 border-green-400 shadow-md" />
+                <div class="pl-4">
+                  <p class="font-bold">Rohan Mehra</p>
+                  <p class="text-sm">Startup Founder</p>
+                </div>
+              </div>
             </div>
           </div>
+
+
+
+          <!-- TODO: Add other 4 cards yaha same structure me paste kar dena -->
+
         </div>
-
-
-        <!-- Add more cards as needed -->
       </div>
+
+      <!-- Right Arrow -->
+      <button id="slideRight" class="p-3 bg-white/20 hover:bg-white/30 rounded-full text-white shadow-lg">
+        &#8594;
+      </button>
     </div>
   </section>
 
+  <style>
+    /* ✅ Mobile fix - card full width */
+    @media (max-width: 639px) {
+      #cardTrack>div {
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    }
+
+    /* ✅ Equal height fix */
+    .testimonial-card {
+      height: auto;
+      /* Default auto */
+    }
+  </style>
 
   <script>
-  var testimonialSwiper = new Swiper(".testimonialSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      768: { // tablet
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-      1024: { // desktop
-        slidesPerView: 3,
-        spaceBetween: 32,
-      },
-    },
-  });
-</script>
+    // ===== Testimonial Slider (Arrow Scroll) =====
+    const track = document.getElementById("cardTrack");
+    const slideLeft = document.getElementById("slideLeft");
+    const slideRight = document.getElementById("slideRight");
+
+    let index = 0;
+    let totalCards = track.children.length;
+
+    function getVisibleCards() {
+      if (window.innerWidth < 640) return 1;   // mobile
+      if (window.innerWidth < 1024) return 2;  // tablet
+      return 3;                                // desktop
+    }
+
+    function updateSlide() {
+      if (!track.children.length) return;
+      const card = track.children[0];
+      const cardWidth = card.getBoundingClientRect().width;
+      track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+
+    // ✅ Equalize card heights
+    function equalizeHeights() {
+      const cards = document.querySelectorAll(".testimonial-card");
+      let maxHeight = 0;
+      cards.forEach(card => {
+        card.style.height = "auto"; // reset first
+        if (card.offsetHeight > maxHeight) {
+          maxHeight = card.offsetHeight;
+        }
+      });
+      cards.forEach(card => card.style.height = maxHeight + "px");
+    }
+
+    slideRight.addEventListener("click", () => {
+      const visibleCards = getVisibleCards();
+      if (index < totalCards - visibleCards) {
+        index++;
+        updateSlide();
+      }
+    });
+
+    slideLeft.addEventListener("click", () => {
+      if (index > 0) {
+        index--;
+        updateSlide();
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      index = 0;
+      updateSlide();
+      equalizeHeights();
+    });
+
+    window.addEventListener("load", () => {
+      updateSlide();
+      equalizeHeights();
+    });
+    // initial load
+  </script>
 
 
 
@@ -731,55 +905,66 @@
   <!-- blog section -->
 
 
-<section class="text-dark body-font bg-light py-16 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 font-sans">
-  <div class="container mx-auto text-center">
-    <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Our Blogs</h2>
-    <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto mb-8"></div>
-  </div>
-
-  <div class="container mx-auto">
-    <div class="flex flex-wrap -mx-2 sm:-mx-4">
-
-         <div class="p-2 sm:p-4 w-full md:w-1/2 lg:w-1/3">
-  <div class="h-full rounded-lg overflow-hidden border-2 border-gray-200 transition duration-300 hover:scale-105 hover:shadow-lg bg-white">
-    <img class="w-full h-auto max-h-48 object-cover object-center" src="./assets/blog1.webp" alt="EV Carbon Footprint" />
-    <div class="p-6">
-      <h2 class="tracking-widest text-xs font-medium text-primary mb-1">ECO-FRIENDLY</h2>
-      <h1 class="title-font text-lg font-semibold text-navy mb-3">How Electric Vehicles Are Reducing Carbon Footprint</h1>
-      <p class="leading-relaxed mb-3 text-gray-700">Explore real-world examples of EV adoption and how it contributes to lowering greenhouse gas emissions.</p>
-      <div class="flex items-center flex-wrap">
-        <a href="./blog/blog1.html" class="font-medium inline-flex items-center bg-gradient-to-r from-lime-500 to-blue-600 bg-clip-text text-transparent hover:underline transition duration-300 cursor-pointer">
-          Learn More
-          <svg class="w-4 h-4 ml-2" fill="none" stroke="url(#gradientStroke)" stroke-width="2" viewBox="0 0 24 24">
-            <use xlink:href="#gradientArrow"></use>
-          </svg>
-        </a>
-      </div>
+  <section class="text-dark body-font bg-light py-16 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 font-sans">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Our Blogs</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto mb-8"></div>
     </div>
-  </div>
-</div>
 
-<div class="p-2 sm:p-4 w-full md:w-1/2 lg:w-1/3">
-  <div class="h-full rounded-lg overflow-hidden border-2 border-gray-200 transition duration-300 hover:scale-105 hover:shadow-lg bg-white">
-    <img class="w-full h-auto max-h-48 object-cover object-center" src="./assets/blog2.webp" alt="EV Charging Stations India" />
-    <div class="p-6">
-      <h2 class="tracking-widest text-xs font-medium text-primary mb-1">CHARGING GUIDE</h2>
-      <h1 class="title-font text-lg font-semibold text-navy mb-3">Top 10 EV Charging Stations in India</h1>
-      <p class="leading-relaxed mb-3 text-gray-700">A comprehensive guide to the best EV charging stations across India for fast and reliable charging.</p>
-      <div class="flex items-center flex-wrap">
-        <a href="./blog/blog2.html" class="font-medium inline-flex items-center bg-gradient-to-r from-lime-500 to-blue-600 bg-clip-text text-transparent hover:underline transition duration-300 cursor-pointer">
-          Learn More
-          <svg class="w-4 h-4 ml-2" fill="none" stroke="url(#gradientStroke)" stroke-width="2" viewBox="0 0 24 24">
-            <use xlink:href="#gradientArrow"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+    <div class="container mx-auto">
+      <div class="flex flex-wrap -mx-2 sm:-mx-4">
 
-      <!-- Card 3 -->
-      <!-- <div class="p-2 sm:p-4 w-full md:w-1/2 lg:w-1/3">
+        <div class="p-2 sm:p-4 w-full md:w-1/2 lg:w-1/3">
+          <div
+            class="h-full rounded-lg overflow-hidden border-2 border-gray-200 transition duration-300 hover:scale-105 hover:shadow-lg bg-white">
+            <img class="w-full h-auto max-h-48 object-cover object-center" src="./assets/blog1.webp"
+              alt="EV Carbon Footprint" />
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs font-medium text-primary mb-1">ECO-FRIENDLY</h2>
+              <h1 class="title-font text-lg font-semibold text-navy mb-3">How Electric Vehicles Are Reducing Carbon
+                Footprint</h1>
+              <p class="leading-relaxed mb-3 text-gray-700">Explore real-world examples of EV adoption and how it
+                contributes to lowering greenhouse gas emissions.</p>
+              <div class="flex items-center flex-wrap">
+                <a href="./blog/blog1.html"
+                  class="font-medium inline-flex items-center bg-gradient-to-r from-lime-500 to-blue-600 bg-clip-text text-transparent hover:underline transition duration-300 cursor-pointer">
+                  Learn More
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="url(#gradientStroke)" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <use xlink:href="#gradientArrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-2 sm:p-4 w-full md:w-1/2 lg:w-1/3">
+          <div
+            class="h-full rounded-lg overflow-hidden border-2 border-gray-200 transition duration-300 hover:scale-105 hover:shadow-lg bg-white">
+            <img class="w-full h-auto max-h-48 object-cover object-center" src="./assets/blog2.webp"
+              alt="EV Charging Stations India" />
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs font-medium text-primary mb-1">CHARGING GUIDE</h2>
+              <h1 class="title-font text-lg font-semibold text-navy mb-3">Top 10 EV Charging Stations in India</h1>
+              <p class="leading-relaxed mb-3 text-gray-700">A comprehensive guide to the best EV charging stations
+                across India for fast and reliable charging.</p>
+              <div class="flex items-center flex-wrap">
+                <a href="./blog/blog2.html"
+                  class="font-medium inline-flex items-center bg-gradient-to-r from-lime-500 to-blue-600 bg-clip-text text-transparent hover:underline transition duration-300 cursor-pointer">
+                  Learn More
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="url(#gradientStroke)" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <use xlink:href="#gradientArrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <!-- <div class="p-2 sm:p-4 w-full md:w-1/2 lg:w-1/3">
         <div class="h-full rounded-lg overflow-hidden border-2 border-gray-200 transition duration-300 hover:scale-105 hover:shadow-lg bg-white flex flex-col">
           <img class="w-full h-auto max-h-48 object-cover object-center" src="./assets/hero3.jpg" alt="Fleet Management" />
           <div class="p-6 flex flex-col flex-1">
@@ -808,9 +993,9 @@
         </div>
       </div> -->
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -869,63 +1054,69 @@
 
 
 
-<!-- Footer Section -->
+  <!-- Footer Section -->
 
   <!-- Footer Section -->
-<footer class="bg-[var(--color-navy)] text-[var(--color-light)] body-font px-6 sm:px-10 lg:px-20 py-10">
-  <div class="container mx-auto">
-    <div class="flex flex-wrap md:text-left text-center">
+  <footer class="bg-[var(--color-navy)] text-[var(--color-light)] body-font px-6 sm:px-10 lg:px-20 py-10">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap md:text-left text-center">
 
-      <!-- Column 1 -->
-      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-        <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">CATEGORIES</h2>
-        <nav class="list-none space-y-2">
-          <li><a href="./index.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Home</a></li>
-          <li><a href="./about.html" class="hover:text-[var(--color-aqua)] cursor-pointer">About</a></li>
-          <li><a href="./index.html#services" class="hover:text-[var(--color-aqua)] cursor-pointer">Services</a></li>
-          <li><a href="./blog.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Blog</a></li>
-        </nav>
-      </div>
-
-      <!-- Column 2 -->
-      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-        <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">SERVICES</h2>
-        <nav class="list-none space-y-2">
-          <li><a href="./ev-service.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Vehicle Leasing</a></li>
-          <li><a href="./cor-empl-transport.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Employee Transport</a></li>
-          <li><a href="./evCharging.html" class="hover:text-[var(--color-aqua)] cursor-pointer">EV Charging</a></li>
-          <li><a href="./weekend-travel.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Weekend EV Rentals</a></li>
-        </nav>
-      </div>
-
-      <!-- Column 3 -->
-      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-        <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">POLICIES</h2>
-        <nav class="list-none space-y-2">
-          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./privacy-policy.html">Privacy Policy</a></li>
-          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./t&c.html">Terms & Conditions</a></li>
-          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./refund-policy.html">Refund Policy</a></li>
-        </nav>
-      </div>
-
-      <!-- Column 4 (Contact) -->
-      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-        <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">CONTACT</h2>
-        <div class="space-y-3 text-sm">
-          <p><i class="fas fa-map-marker-alt mr-2 text-[var(--color-aqua)]"></i> 123 Business Street, New Delhi, India</p>
-          <p><i class="fas fa-phone mr-2 text-[var(--color-aqua)]"></i> +91 98765 43210</p>
-          <p><i class="fas fa-envelope mr-2 text-[var(--color-aqua)]"></i> support@example.com</p>
+        <!-- Column 1 -->
+        <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">CATEGORIES</h2>
+          <nav class="list-none space-y-2">
+            <li><a href="./index.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Home</a></li>
+            <li><a href="./about.html" class="hover:text-[var(--color-aqua)] cursor-pointer">About</a></li>
+            <li><a href="./index.html#services" class="hover:text-[var(--color-aqua)] cursor-pointer">Services</a></li>
+            <li><a href="./blog.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Blog</a></li>
+          </nav>
         </div>
-        <button onclick="window.location.href='./contact.html'"
+
+        <!-- Column 2 -->
+        <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">SERVICES</h2>
+          <nav class="list-none space-y-2">
+            <li><a href="./ev-service.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Vehicle Leasing</a>
+            </li>
+            <li><a href="./cor-empl-transport.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Employee
+                Transport</a></li>
+            <li><a href="./evCharging.html" class="hover:text-[var(--color-aqua)] cursor-pointer">EV Charging</a></li>
+            <li><a href="./weekend-travel.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Weekend EV
+                Rentals</a></li>
+          </nav>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">POLICIES</h2>
+          <nav class="list-none space-y-2">
+            <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./privacy-policy.html">Privacy Policy</a>
+            </li>
+            <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./t&c.html">Terms & Conditions</a></li>
+            <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./refund-policy.html">Refund Policy</a>
+            </li>
+          </nav>
+        </div>
+
+        <!-- Column 4 (Contact) -->
+        <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">CONTACT</h2>
+          <div class="space-y-3 text-sm">
+            <p><i class="fas fa-map-marker-alt mr-2 text-[var(--color-aqua)]"></i> 123 Business Street, New Delhi, India
+            </p>
+            <p><i class="fas fa-phone mr-2 text-[var(--color-aqua)]"></i> +91 98765 43210</p>
+            <p><i class="fas fa-envelope mr-2 text-[var(--color-aqua)]"></i> support@example.com</p>
+          </div>
+          <button onclick="window.location.href='./contact.html'"
             class="mt-4 bg-[var(--color-aqua)] hover:bg-white text-[var(--color-navy)] font-semibold py-2 px-6 rounded transition duration-300">
             Contact Us
           </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Bottom Bar -->
-  <div class="bg-white/10 mt-8">
+    <!-- Bottom Bar -->
+    <div class="bg-white/10 mt-8">
       <div class="container mx-auto px-5 py-4 flex flex-col sm:flex-row items-center justify-between">
 
         <!-- Logo & Name -->
@@ -973,7 +1164,7 @@
         </div>
       </div>
     </div>
-</footer>
+  </footer>
 
 
 

@@ -240,8 +240,9 @@ if (slideContainer && slides.length) {
   updateController();
 }
 
-  // ===== Recognition Logo Slider (Arrow Scroll) =====
-  const sliderPositions = {};
+
+// ===== Recognition Logo Slider (Arrow Scroll) =====
+const sliderPositions = {};
 const recognitionItemWidth = 224;
 
 document.querySelectorAll('[data-slider]').forEach(button => {
@@ -249,7 +250,7 @@ document.querySelectorAll('[data-slider]').forEach(button => {
   if (sliderName === 'recognition') {
     button.addEventListener('click', () => {
       const direction = button.getAttribute('data-dir');
-      const slider = document.getElementById(`${sliderName}-slider-track`); // updated ID
+      const slider = document.getElementById(`${sliderName}-slider-track`);
       const container = slider.parentElement;
 
       if (!sliderPositions[sliderName]) sliderPositions[sliderName] = 0;
@@ -269,76 +270,49 @@ document.querySelectorAll('[data-slider]').forEach(button => {
 });
 
 
-  // ===== Testimonial Slider (Arrow + Drag) =====
-  const testimonialSlider = document.getElementById('testimonial-slider');
-  const testimonialItemWidth = 336;
-  let currentX = 0;
-  let startX = 0;
-  let isDragging = false;
-  let currentTranslate = 0;
-  let prevTranslate = 0;
+// ===== Testimonial Slider (Arrow Scroll) =====
+const track = document.getElementById("cardTrack");
+const slideLeft = document.getElementById("slideLeft");
+const slideRight = document.getElementById("slideRight");
 
-  if (testimonialSlider) {
-    const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+let index = 0;
+let totalCards = track.children.length;
 
-    const setSliderPosition = (x) => {
-      testimonialSlider.style.transform = `translateX(${x}px)`;
-      currentTranslate = x;
-    };
+function getVisibleCards() {
+  if (window.innerWidth < 640) return 1;   // mobile
+  if (window.innerWidth < 1024) return 2;  // tablet
+  return 3;                                // desktop
+}
 
-    document.querySelectorAll('[data-slider]').forEach(button => {
-      if (button.getAttribute('data-slider') === 'testimonial') {
-        const direction = button.getAttribute('data-dir');
-        button.addEventListener('click', () => {
-          const maxScroll = testimonialSlider.scrollWidth - testimonialSlider.parentElement.offsetWidth;
+function updateSlide() {
+  if (!track.children.length) return;
 
-          if (direction === 'prev') {
-            currentX = clamp(currentX + testimonialItemWidth, -0, 0);
-          } else {
-            currentX = clamp(currentX - testimonialItemWidth, -maxScroll, 0);
-          }
+  const wrapper = document.getElementById("cardWrapper");
+  const visibleCards = getVisibleCards();
+  const cardWidth = wrapper.offsetWidth / visibleCards;
 
-          setSliderPosition(currentX);
-        });
-      }
-    });
+  track.style.transform = `translateX(-${index * cardWidth}px)`;
+}
 
-    const getPositionX = (e) => e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
-
-    const dragStart = (event) => {
-      isDragging = true;
-      startX = getPositionX(event);
-      prevTranslate = currentTranslate;
-      testimonialSlider.style.transition = 'none';
-    };
-
-    const dragMove = (event) => {
-      if (!isDragging) return;
-      const currentPosition = getPositionX(event);
-      const deltaX = currentPosition - startX;
-      const nextTranslate = clamp(
-        prevTranslate + deltaX,
-        -testimonialSlider.scrollWidth + testimonialSlider.parentElement.offsetWidth,
-        0
-      );
-      setSliderPosition(nextTranslate);
-    };
-
-    const dragEnd = () => {
-      isDragging = false;
-      testimonialSlider.style.transition = 'transform 0.3s ease-in-out';
-      const snapped = Math.round(currentTranslate / testimonialItemWidth) * testimonialItemWidth;
-      const maxScroll = testimonialSlider.scrollWidth - testimonialSlider.parentElement.offsetWidth;
-      currentX = clamp(snapped, -maxScroll, 0);
-      setSliderPosition(currentX);
-    };
-
-    testimonialSlider.addEventListener('mousedown', dragStart);
-    testimonialSlider.addEventListener('touchstart', dragStart);
-    testimonialSlider.addEventListener('mouseup', dragEnd);
-    testimonialSlider.addEventListener('touchend', dragEnd);
-    testimonialSlider.addEventListener('mouseleave', dragEnd);
-    testimonialSlider.addEventListener('mousemove', dragMove);
-    testimonialSlider.addEventListener('touchmove', dragMove);
+slideRight.addEventListener("click", () => {
+  const visibleCards = getVisibleCards();
+  if (index < totalCards - visibleCards) {
+    index++;
+    updateSlide();
   }
+});
+
+slideLeft.addEventListener("click", () => {
+  if (index > 0) {
+    index--;
+    updateSlide();
+  }
+});
+
+window.addEventListener("resize", () => {
+  index = 0;
+  updateSlide();
+});
+
+updateSlide(); // initial load fix
 });
