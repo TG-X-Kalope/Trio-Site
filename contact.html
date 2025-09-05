@@ -140,8 +140,8 @@
   </section>
 
 
-  <section id="book" class="text-dark font-sans relative py-20 px-6 sm:px-10 md:px-20 lg:px-32">
-    <div class="container mx-auto flex sm:flex-nowrap flex-wrap gap-10">
+<section id="book" class="text-dark font-sans relative py-20 px-6 sm:px-10 md:px-20 lg:px-32">
+  <div class="container mx-auto flex sm:flex-nowrap flex-wrap gap-10">
 
     <!-- Map & Contact Info -->
     <div class="lg:w-2/3 md:w-1/2 relative bg-light rounded-sm overflow-hidden p-10">
@@ -155,59 +155,88 @@
         marginwidth="0"
         scrolling="no"
         style="filter: grayscale(1) contrast(1.2) opacity(0.5);"
-        src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=New+Delhi+(Your+Company)&ie=UTF8&t=&z=14&iwloc=B&output=embed">
+        src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Kolkata+(Your+Company)&ie=UTF8&t=&z=14&iwloc=B&output=embed">
       </iframe>
-      <div class="relative bg-[var(--color-navy)] flex flex-wrap py-6 px-6 rounded-sm shadow-md">
-        <div class="lg:w-1/2 w-full mb-4 lg:mb-0">
-          <h2 class="title-font font-semibold text-white text-xs tracking-widest">ADDRESS</h2>
-          <p class="mt-1 text-sm text-white">123 Trio, Sector 21, New Delhi 110001</p>
+
+      <!-- Contact Info Card -->
+      <div class="relative bg-[var(--color-navy)] py-6 px-6 rounded-sm shadow-md space-y-6">
+
+        <!-- Address Row -->
+        <div class="flex flex-col md:flex-row gap-6">
+          <!-- Registered Address -->
+          <div class="flex-1">
+            <h2 class="title-font font-semibold text-white text-xs tracking-widest uppercase">Registered Address</h2>
+            <p class="mt-1 text-sm text-white leading-relaxed">
+              26E, Raipur Mondal Para Road,<br />
+              P.S. Netaji Nagar, Naktala,<br />
+              Kolkata – 700047, West Bengal, India
+            </p>
+          </div>
+
+          <!-- Office Address -->
+          <div class="flex-1">
+            <h2 class="title-font font-semibold text-white text-xs tracking-widest uppercase">Office Address</h2>
+            <p class="mt-1 text-sm text-white leading-relaxed">
+              Shilpota More, Mahammadpur Road (Opposite Curiosity),<br />
+              New Town, Kolkata – 700135,
+              West Bengal, India
+            </p>
+          </div>
         </div>
-        <div class="lg:w-1/2 w-full">
-          <h2 class="title-font font-semibold text-white text-xs tracking-widest">EMAIL</h2>
-          <a class="text-white text-sm leading-relaxed">contact@yourcompany.com</a>
-          <h2 class="title-font font-semibold text-white text-xs tracking-widest mt-4">PHONE</h2>
-          <p class="leading-relaxed text-sm text-white">+91 99999 88888</p>
+
+        <!-- Email & Phone Row -->
+        <div class="flex flex-col sm:flex-row gap-6">
+          <div class="flex-1">
+            <h2 class="title-font font-semibold text-white text-xs tracking-widest uppercase">Email</h2>
+            <a class="text-white text-sm leading-relaxed">contact@yourcompany.com</a>
+          </div>
+          <div class="flex-1">
+            <h2 class="title-font font-semibold text-white text-xs tracking-widest uppercase">Phone</h2>
+            <p class="text-sm text-white">+91 62918 42407</p>
+          </div>
         </div>
+
       </div>
     </div>
 
-      <!-- Feedback Form -->
-      <div class="lg:w-1/3 md:w-1/2 w-full bg-[var(--color-navy)] rounded-sm shadow-md p-8">
-        <h2 class="text-white text-xl font-bold mb-2">Contact Us</h2>
-        <p class="text-sm text-white mb-5">We’re here to help you with queries, suggestions, or collaborations.</p>
+    <!-- Feedback Form -->
+    <div class="lg:w-1/3 md:w-1/2 w-full bg-[var(--color-navy)] rounded-sm shadow-md p-8">
+      <h2 class="text-white text-xl font-bold mb-2">Contact Us</h2>
+      <p class="text-sm text-white mb-5">We’re here to help you with queries, suggestions, or collaborations.</p>
 
-        <!-- Name -->
-        <div class="mb-4">
-          <label for="name" class="text-sm text-white font-medium">Name</label>
-          <input type="text" id="name" name="name"
-            class="w-full mt-1 rounded-md border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/40 text-sm text-white px-3 py-2 outline-none transition" />
-        </div>
-
-        <!-- Email -->
-        <div class="mb-4">
-          <label for="email" class="text-sm text-white font-medium">Email</label>
-          <input type="email" id="email" name="email"
-            class="w-full mt-1 rounded-md border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/40 text-sm text-dark px-3 py-2 outline-none transition" />
-        </div>
-
-        <!-- Message -->
-        <div class="mb-4">
-          <label for="message" class="text-sm text-white font-medium">Message</label>
-          <textarea id="message" name="message"
-            class="w-full mt-1 rounded-md border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/40 text-sm text-white px-3 py-2 h-32 resize-none outline-none transition"></textarea>
-        </div>
-
-        <!-- Button -->
-        <button class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
-          hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
-          Submit
-        </button>
-
-        <p class="text-xs text-white mt-3">We usually respond within 24 hours.</p>
+      <!-- Name -->
+      <div class="mb-4">
+        <label for="name" class="text-sm text-white font-medium">Name</label>
+        <input type="text" id="name" name="name"
+          class="w-full mt-1 rounded-md border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/40 text-sm text-white px-3 py-2 outline-none transition" />
       </div>
 
+      <!-- Email -->
+      <div class="mb-4">
+        <label for="email" class="text-sm text-white font-medium">Email</label>
+        <input type="email" id="email" name="email"
+          class="w-full mt-1 rounded-md border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/40 text-sm text-dark px-3 py-2 outline-none transition" />
+      </div>
+
+      <!-- Message -->
+      <div class="mb-4">
+        <label for="message" class="text-sm text-white font-medium">Message</label>
+        <textarea id="message" name="message"
+          class="w-full mt-1 rounded-md border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/40 text-sm text-white px-3 py-2 h-32 resize-none outline-none transition"></textarea>
+      </div>
+
+      <!-- Button -->
+      <button class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+        hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
+        Submit
+      </button>
+
+      <p class="text-xs text-white mt-3">We usually respond within 24 hours.</p>
     </div>
-  </section>
+
+  </div>
+</section>
+
 
 
 
@@ -300,18 +329,35 @@
       </div>
 
       <!-- Column 4 (Contact) -->
-      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-        <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">CONTACT</h2>
-        <div class="space-y-3 text-sm">
-          <p><i class="fas fa-map-marker-alt mr-2 text-[var(--color-aqua)]"></i> 123 Business Street, New Delhi, India</p>
-          <p><i class="fas fa-phone mr-2 text-[var(--color-aqua)]"></i> +91 98765 43210</p>
-          <p><i class="fas fa-envelope mr-2 text-[var(--color-aqua)]"></i> support@example.com</p>
-        </div>
-        <button onclick="window.location.href='./contact.html'"
+     <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">
+            CONTACT
+          </h2>
+          <div class="space-y-3 text-sm leading-relaxed">
+            <p class="flex items-start">
+              <i class="fas fa-map-marker-alt mr-2 mt-1 text-[var(--color-aqua)]"></i>
+              <span>
+                Shilpota More, Mahammadpur Road (Opposite Curiosity),
+                New Town, <br>
+                Kolkata – 700135,
+                West Bengal, India
+              </span>
+            </p>
+            <p class="flex items-center">
+              <i class="fas fa-phone mr-2 text-[var(--color-aqua)]"></i>
+              +91 62918 42407
+            </p>
+            <p class="flex items-center">
+              <i class="fas fa-envelope mr-2 text-[var(--color-aqua)]"></i>
+              support@example.com
+            </p>
+          </div>
+
+          <button onclick="window.location.href='./contact.html'"
             class="mt-4 bg-[var(--color-aqua)] hover:bg-white text-[var(--color-navy)] font-semibold py-2 px-6 rounded transition duration-300">
             Contact Us
           </button>
-      </div>
+        </div>
     </div>
   </div>
 

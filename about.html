@@ -56,75 +56,82 @@
 </head>
 
 <body class="font-sans bg-light text-dark">
-<header
-  class="fixed top-0 left-0 right-0 w-full z-[60] bg-[var(--color-navy)] text-[var(--color-light)] body-font transition-shadow">
-  <div class="container mx-auto flex items-center justify-between px-4 py-2 h-16">
-    <!-- Logo -->
-    <a href="./index.html" class="flex items-center title-font font-medium">
-      <img src="./assets/R_Secondary 4_PNG3.png" alt="Trio Logo" class="h-10 md:h-12" />
-    </a>
+  <header
+    class="fixed top-0 left-0 right-0 w-full z-[60] bg-[var(--color-navy)] text-[var(--color-light)] body-font transition-shadow">
+    <div class="container mx-auto flex items-center justify-between px-4 py-2 h-16">
+      <!-- Logo -->
+      <a href="./index.html" class="flex items-center title-font font-medium">
+        <img src="./assets/R_Secondary 4_PNG3.png" alt="Trio Logo" class="h-10 md:h-12" />
+      </a>
 
-    <!-- Hamburger for mobile -->
-    <button id="menu-btn"
-      class="inline-flex items-center justify-center p-2 text-[var(--color-light)] rounded md:hidden focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
-      aria-label="Toggle menu">
-      <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round" viewBox="0 0 24 24">
-        <path d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
+      <!-- Hamburger for mobile -->
+      <button id="menu-btn"
+        class="inline-flex items-center justify-center p-2 text-[var(--color-light)] rounded md:hidden focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+        aria-label="Toggle menu">
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
 
-    <!-- Desktop Menu -->
-    <nav id="menu" class="hidden md:flex md:ml-auto items-center text-base space-x-2 relative">
-      <a href="./index.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Home</a>
-      <a href="./about.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">About</a>
+      <!-- Desktop Menu -->
+      <nav id="menu" class="hidden md:flex md:ml-auto items-center text-base space-x-2 relative">
+        <a href="./index.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Home</a>
+        <a href="./about.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">About</a>
 
-      <!-- Services Dropdown -->
-      <div class="relative group">
-        <button
-          class="nav-link px-3 py-2 hover:text-[var(--color-primary)] flex items-center gap-1">
-          Services
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </button>
-        <div
-          class="absolute left-0 mt-2 w-56 bg-[var(--color-navy)] text-[var(--color-light)] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-          <a href="./ev-service.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
-          <a href="./cor-empl-transport.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Employee Transport</a>
-          <a href="./evCharging.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
-          <a href="./weekend-travel.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Weekend EV Rentals</a>
-          <a href="./" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Logistic Service</a>
+        <!-- Services Dropdown -->
+        <div class="relative group">
+          <button class="nav-link px-3 py-2 hover:text-[var(--color-primary)] flex items-center gap-1">
+            Services
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 mt-2 w-56 bg-[var(--color-navy)] text-[var(--color-light)] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <a href="./ev-service.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
+            <a href="./cor-empl-transport.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Employee
+              Transport</a>
+            <a href="./evCharging.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
+            <a href="./weekend-travel.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Weekend EV
+              Rentals</a>
+            <a href="./" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Logistic Service</a>
+          </div>
         </div>
-      </div>
 
-      <a href="./blog.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Blog</a>
-      <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
-    </nav>
-  </div>
+        <a href="./blog.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Blog</a>
+        <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
+      </nav>
+    </div>
 
-  <!-- Mobile dropdown -->
-  <div id="mobile-menu"
-    class="md:hidden bg-[var(--color-navy)] px-4 pb-4 absolute left-0 right-0 top-full z-50 hidden">
-    <nav class="flex flex-col">
-      <a href="./index.html" class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Home</a>
-      <a href="./about.html" class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">About</a>
+    <!-- Mobile dropdown -->
+    <div id="mobile-menu"
+      class="md:hidden bg-[var(--color-navy)] px-4 pb-4 absolute left-0 right-0 top-full z-50 hidden">
+      <nav class="flex flex-col">
+        <a href="./index.html"
+          class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Home</a>
+        <a href="./about.html"
+          class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">About</a>
 
-      <!-- Mobile Services dropdown -->
-      <div class="flex flex-col border-b border-[var(--color-primary)]">
-        <span class="px-3 py-2">Services</span>
-        <a href="./ev-service.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
-        <a href="./cor-empl-transport.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Employee Transport</a>
-        <a href="./evCharging.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
-        <a href="./weekend-travel.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Weekend EV Rentals</a>
-        <a href="./ev-logistic.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Logistic Service</a>
-      </div>
+        <!-- Mobile Services dropdown -->
+        <div class="flex flex-col border-b border-[var(--color-primary)]">
+          <span class="px-3 py-2">Services</span>
+          <a href="./ev-service.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
+          <a href="./cor-empl-transport.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Employee
+            Transport</a>
+          <a href="./evCharging.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
+          <a href="./weekend-travel.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Weekend EV
+            Rentals</a>
+          <a href="./ev-logistic.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Logistic
+            Service</a>
+        </div>
 
-      <a href="./blog.html" class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Blog</a>
-      <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
-    </nav>
-  </div>
-</header>
+        <a href="./blog.html"
+          class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Blog</a>
+        <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- Padding to prevent overlap -->
   <!-- <div class="pt-20"></div>
@@ -251,33 +258,55 @@
         <div class="flex-1 p-6">
           <h3 class="text-xl sm:text-2xl font-semibold text-navy mb-3">Our Vision</h3>
           <p class="text-base sm:text-lg leading-relaxed opacity-70">
-            We envision a future where sustainable mobility empowers businesses and communities alike. By making
-            electric transportation accessible, efficient, and affordable, we aim to drive the transition toward a
-            cleaner environment and a smarter, more connected society.
+            Trio envisions a world where every ride and every delivery contributes to a healthier planet. Our vision is
+            to eliminate pollution and carbon emissions by creating a fully electric ecosystem for both personal
+            mobility and logistics. We aspire to lead the transformation of the automotive and logistics industries,
+            making sustainable, smart, and connected transportation accessible to all. By combining innovation,
+            responsibility, and care for nature, we aim to build a future where progress and the environment move
+            together in harmony.
           </p>
         </div>
       </div>
 
       <!-- Our Mission -->
       <div
-        class="flex flex-col md:flex-row-reverse items-center gap-6 bg-white/50 rounded-sm shadow-sm overflow-hidden">
+        class="flex flex-col md:flex-row-reverse items-stretch gap-6 bg-white/50 rounded-sm shadow-sm overflow-hidden">
+
         <!-- Image with left gradient border -->
-        <div class="w-full md:w-1/2 h-64 md:h-auto relative">
+        <div class="w-full md:w-1/2 relative">
           <img src="./assets/hero2.jpg" alt="Mission Image" class="object-cover w-full h-full" />
           <div class="absolute top-0 left-0 w-0.5 h-full bg-gradient-to-b from-green-300 to-blue-500"></div>
         </div>
 
         <!-- Text -->
         <div class="flex-1 p-6">
-          <h3 class="text-xl sm:text-2xl font-semibold text-navy mb-3">Our Mission</h3>
-          <p class="text-base sm:text-lg leading-relaxed opacity-70">
-            Our mission is to transform the way India moves by providing innovative electric vehicle solutions, robust
-            charging infrastructure, and seamless digital services. Through technology, partnerships, and customer-first
-            commitment, we strive to accelerate the adoption of green mobility and deliver lasting value to our
-            stakeholders.
+          <h3 class="text-xl sm:text-2xl font-semibold text-navy mb-4">Our Mission</h3>
+
+          <p class="text-base sm:text-lg leading-relaxed opacity-70 mb-4">
+            At <span class="font-semibold text-navy">Trio</span>, our mission is to redefine the way people move
+            and businesses operate. We are committed to:
+          </p>
+
+          <ul class="list-disc pl-5 space-y-2 text-base sm:text-lg leading-relaxed opacity-70">
+            <li>Developing electric cars that are eco-friendly, stylish, reliable, and affordable for everyday use.</li>
+            <li>Revolutionizing logistics with 100% electric fleets that reduce congestion, minimize noise, and lower
+              emissions.</li>
+            <li>Supporting sustainability by adopting green practices in design, manufacturing, and operations for
+              healthier cities.</li>
+            <li>Driving innovation through smart technology, renewable energy integration, and continuous performance
+              improvements.</li>
+            <li>Empowering communities by raising awareness about eco-friendly mobility and promoting nature-first
+              choices.</li>
+            <li>Building a connected future where technology, people, and the environment coexist seamlessly.</li>
+          </ul>
+
+          <p class="mt-4 text-base sm:text-lg leading-relaxed opacity-70">
+            Our purpose is clear: to protect nature, reduce pollution, and create a sustainable legacy
+            where clean mobility becomes the heartbeat of modern living.
           </p>
         </div>
       </div>
+
 
     </div>
   </section>
@@ -381,18 +410,20 @@
         </p>
       </div>
 
-      <!-- Team Grid (3 Cards Centered) -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-center">
+      <!-- Team Grid (2 Cards) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 justify-center">
 
         <!-- Team Member 1 -->
         <div
           class="bg-white/80 backdrop-blur-md rounded-md shadow-md p-8 text-center hover:shadow-xl transition duration-300">
-          <img src="./assets/hero1.jpg" alt="Amit Joshi"
+          <img src="./assets/hero1.jpg" alt="Subhash Kumar"
             class="w-28 h-28 mx-auto mb-4 rounded-full object-cover shadow-sm border border-white" />
-          <h3 class="text-xl font-semibold text-navy">Amit Joshi</h3>
+          <h3 class="text-xl font-semibold text-navy">Subhash Kumar</h3>
           <p class="text-sm text-gray-500 mb-3">Founder & CEO</p>
-          <p class="text-sm text-gray-700 mb-4">Leads vision and strategy to create sustainable infrastructure and
-            empower local communities.</p>
+          <p class="text-sm text-gray-700 mb-4">
+            B.Tech in Computer Science. Former employee at Vodafone.
+            Currently leading Trio as Founder & CEO, driving innovation and sustainable solutions.
+          </p>
           <div class="flex justify-center gap-4 text-gray-500">
             <a href="#" class="hover:text-blue-600">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -417,42 +448,14 @@
         <!-- Team Member 2 -->
         <div
           class="bg-white/80 backdrop-blur-md rounded-md shadow-md p-8 text-center hover:shadow-xl transition duration-300">
-          <img src="./assets/hero2.jpg" alt="Priya Kumari"
+          <img src="./assets/hero2.jpg" alt="Somnath Das"
             class="w-28 h-28 mx-auto mb-4 rounded-full object-cover shadow-sm border border-white" />
-          <h3 class="text-xl font-semibold text-navy">Priya Kumari</h3>
-          <p class="text-sm text-gray-500 mb-3">Chief Operations Officer</p>
-          <p class="text-sm text-gray-700 mb-4">Oversees efficient delivery of eco-mobility services and manages
-            partnerships with rural artisans.</p>
-          <div class="flex justify-center gap-4 text-gray-500">
-            <a href="#" class="hover:text-blue-600">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-              </svg>
-            </a>
-            <a href="#" class="hover:text-sky-500">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 9.09v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-              </svg>
-            </a>
-            <a href="#" class="hover:text-blue-400">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7A8.38 8.38 0 019 19L3 21l1.9-5.7A8.38 8.38 0 013 11.5a8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Team Member 3 -->
-        <div
-          class="bg-white/80 backdrop-blur-md rounded-md shadow-md p-8 text-center hover:shadow-xl transition duration-300">
-          <img src="./assets/hero3.jpg" alt="Rahul Singh"
-            class="w-28 h-28 mx-auto mb-4 rounded-full object-cover shadow-sm border border-white" />
-          <h3 class="text-xl font-semibold text-navy">Rahul Singh</h3>
-          <p class="text-sm text-gray-500 mb-3">Technology Director</p>
-          <p class="text-sm text-gray-700 mb-4">Leads the development of smart grids, IoT-enabled energy harvesting, and
-            innovative mobility solutions.</p>
+          <h3 class="text-xl font-semibold text-navy">Somnath Das</h3>
+          <p class="text-sm text-gray-500 mb-3">Founder & CEO</p>
+          <p class="text-sm text-gray-700 mb-4">
+            M.A. graduate. Former employee at Uber.
+            Now serving as Founder & CEO of Trio, ensuring smooth operations and impactful strategies.
+          </p>
           <div class="flex justify-center gap-4 text-gray-500">
             <a href="#" class="hover:text-blue-600">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -477,6 +480,7 @@
       </div>
     </div>
   </section>
+
 
 
 
@@ -551,7 +555,6 @@
       </p>
     </div>
 
-
     <div class="container mx-auto flex sm:flex-nowrap flex-wrap gap-10">
 
       <!-- Map & Contact Info -->
@@ -560,17 +563,45 @@
           marginwidth="0" scrolling="no" style="filter: grayscale(1) contrast(1.2) opacity(0.5);"
           src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Bettiah+(Bluewave)&ie=UTF8&t=&z=14&iwloc=B&output=embed">
         </iframe>
-        <div class="relative bg-[var(--color-navy)] flex flex-wrap py-6 px-6 rounded-sm shadow-md">
-          <div class="lg:w-1/2 w-full mb-4 lg:mb-0">
-            <h2 class="title-font font-semibold text-white text-xs tracking-widest">ADDRESS</h2>
-            <p class="mt-1 text-sm text-white">Gandhi Maidan, Main Road, Patna, Bihar 845438</p>
+
+        <!-- Contact Info Card -->
+        <div class="relative bg-[var(--color-navy)] py-6 px-6 rounded-sm shadow-md space-y-6">
+
+          <!-- Address Row -->
+          <div class="flex flex-col md:flex-row gap-6">
+            <!-- Registered Address -->
+            <div class="flex-1">
+              <h2 class="title-font font-semibold text-white text-xs tracking-widest uppercase">Registered Address</h2>
+              <p class="mt-1 text-sm text-white leading-relaxed">
+                26E, Raipur Mondal Para Road,<br />
+                P.S. Netaji Nagar, Naktala,<br />
+                Kolkata – 700047, West Bengal, India
+              </p>
+            </div>
+
+            <!-- Office Address -->
+            <div class="flex-1">
+              <h2 class="title-font font-semibold text-white text-xs tracking-widest uppercase">Office Address</h2>
+              <p class="mt-1 text-sm text-white leading-relaxed">
+                Shilpota More, Mahammadpur Road (Opposite Curiosity),<br />
+                New Town, Kolkata – 700135,
+                West Bengal, India
+              </p>
+            </div>
           </div>
-          <div class="lg:w-1/2 w-full">
-            <h2 class="title-font font-semibold text-white text-xs tracking-widest">EMAIL</h2>
-            <a class="text-white text-sm leading-relaxed">hello@trio.in</a>
-            <h2 class="title-font font-semibold text-white text-xs tracking-widest mt-4">PHONE</h2>
-            <p class="leading-relaxed text-sm text-white">+91 99999 77777</p>
+
+          <!-- Email & Phone Row -->
+          <div class="flex flex-col sm:flex-row gap-6">
+            <div class="flex-1">
+              <h2 class="title-font font-semibold text-white text-xs tracking-widest uppercase">Email</h2>
+              <a class="text-white text-sm leading-relaxed">hello@trio.in</a>
+            </div>
+            <div class="flex-1">
+              <h2 class="title-font font-semibold text-white text-xs tracking-widest uppercase">Phone</h2>
+              <p class="text-sm text-white">+91 62918 42407</p>
+            </div>
           </div>
+
         </div>
       </div>
 
@@ -602,7 +633,7 @@
 
         <!-- Button -->
         <button class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
-          hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
+        hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
           Submit
         </button>
 
@@ -614,7 +645,6 @@
 
 
 
-  <!-- footer-section -->
 
   <!-- Footer Section -->
   <footer class="bg-[var(--color-navy)] text-[var(--color-light)] body-font px-6 sm:px-10 lg:px-20 py-10">
@@ -660,13 +690,29 @@
 
         <!-- Column 4 (Contact) -->
         <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">CONTACT</h2>
-          <div class="space-y-3 text-sm">
-            <p><i class="fas fa-map-marker-alt mr-2 text-[var(--color-aqua)]"></i> 123 Business Street, New Delhi, India
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">
+            CONTACT
+          </h2>
+          <div class="space-y-3 text-sm leading-relaxed">
+            <p class="flex items-start">
+              <i class="fas fa-map-marker-alt mr-2 mt-1 text-[var(--color-aqua)]"></i>
+              <span>
+                Shilpota More, Mahammadpur Road (Opposite Curiosity),
+                New Town, <br>
+                Kolkata – 700135,
+                West Bengal, India
+              </span>
             </p>
-            <p><i class="fas fa-phone mr-2 text-[var(--color-aqua)]"></i> +91 98765 43210</p>
-            <p><i class="fas fa-envelope mr-2 text-[var(--color-aqua)]"></i> support@example.com</p>
+            <p class="flex items-center">
+              <i class="fas fa-phone mr-2 text-[var(--color-aqua)]"></i>
+              +91 62918 42407
+            </p>
+            <p class="flex itesms-center">
+              <i class="fas fa-envelope mr-2 text-[var(--color-aqua)]"></i>
+              support@example.com
+            </p>
           </div>
+
           <button onclick="window.location.href='./contact.html'"
             class="mt-4 bg-[var(--color-aqua)] hover:bg-white text-[var(--color-navy)] font-semibold py-2 px-6 rounded transition duration-300">
             Contact Us
@@ -725,6 +771,7 @@
       </div>
     </div>
   </footer>
+
 
 
 
