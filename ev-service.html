@@ -11,7 +11,7 @@
   <link href="./dist/output.css" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
- 
+
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -41,693 +41,867 @@
 
 
     /* Hide scrollbar but keep scroll functionality */
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-  .scrollbar-hide {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
   </style>
 </head>
 
 <body class="font-sans bg-light text-dark">
-<header
-  class="fixed top-0 left-0 right-0 w-full z-[60] bg-[var(--color-navy)] text-[var(--color-light)] body-font transition-shadow">
-  <div class="container mx-auto flex items-center justify-between px-4 py-2 h-16">
-    <!-- Logo -->
-    <a href="./index.html" class="flex items-center title-font font-medium">
-      <img src="./assets/R_Secondary 4_PNG3.png" alt="Trio Logo" class="h-10 md:h-12" />
-    </a>
+  <header
+    class="fixed top-0 left-0 right-0 w-full z-[60] bg-[var(--color-navy)] text-[var(--color-light)] body-font transition-shadow">
+    <div class="container mx-auto flex items-center justify-between px-4 py-2 h-16">
+      <!-- Logo -->
+      <a href="./index.html" class="flex items-center title-font font-medium">
+        <img src="./assets/R_Secondary 4_PNG3.png" alt="Trio Logo" class="h-10 md:h-12" />
+      </a>
 
-    <!-- Hamburger for mobile -->
-    <button id="menu-btn"
-      class="inline-flex items-center justify-center p-2 text-[var(--color-light)] rounded md:hidden focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
-      aria-label="Toggle menu">
-      <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round" viewBox="0 0 24 24">
-        <path d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
+      <!-- Hamburger for mobile -->
+      <button id="menu-btn"
+        class="inline-flex items-center justify-center p-2 text-[var(--color-light)] rounded md:hidden focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+        aria-label="Toggle menu">
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
 
-    <!-- Desktop Menu -->
-    <nav id="menu" class="hidden md:flex md:ml-auto items-center text-base space-x-2 relative">
-      <a href="./index.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Home</a>
-      <a href="./about.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">About</a>
+      <!-- Desktop Menu -->
+      <nav id="menu" class="hidden md:flex md:ml-auto items-center text-base space-x-2 relative">
+        <a href="./index.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Home</a>
+        <a href="./about.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">About</a>
 
-      <!-- Services Dropdown -->
-      <div class="relative group">
-        <button
-          class="nav-link px-3 py-2 hover:text-[var(--color-primary)] flex items-center gap-1">
-          Services
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </button>
-        <div
-          class="absolute left-0 mt-2 w-56 bg-[var(--color-navy)] text-[var(--color-light)] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-          <a href="./ev-service.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
-          <a href="./cor-empl-transport.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Employee Transport</a>
-          <a href="./evCharging.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
-          <a href="./weekend-travel.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Weekend EV Rentals</a>
-          <a href="./" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Logistic Service</a>
+        <!-- Services Dropdown -->
+        <div class="relative group">
+          <button class="nav-link px-3 py-2 hover:text-[var(--color-primary)] flex items-center gap-1">
+            Services
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 mt-2 w-56 bg-[var(--color-navy)] text-[var(--color-light)] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <a href="./ev-service.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
+            <a href="./cor-empl-transport.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Employee
+              Transport</a>
+            <a href="./evCharging.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
+            <a href="./weekend-travel.html" class="block px-4 py-2 hover:text-[var(--color-primary)]">Weekend EV
+              Rentals</a>
+            <a href="./" class="block px-4 py-2 hover:text-[var(--color-primary)]">EV Logistic Service</a>
+          </div>
         </div>
-      </div>
 
-      <a href="./blog.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Blog</a>
-      <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
-    </nav>
-  </div>
+        <a href="./blog.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Blog</a>
+        <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
+      </nav>
+    </div>
 
-  <!-- Mobile dropdown -->
-  <div id="mobile-menu"
-    class="md:hidden bg-[var(--color-navy)] px-4 pb-4 absolute left-0 right-0 top-full z-50 hidden">
-    <nav class="flex flex-col">
-      <a href="./index.html" class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Home</a>
-      <a href="./about.html" class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">About</a>
+    <!-- Mobile dropdown -->
+    <div id="mobile-menu"
+      class="md:hidden bg-[var(--color-navy)] px-4 pb-4 absolute left-0 right-0 top-full z-50 hidden">
+      <nav class="flex flex-col">
+        <a href="./index.html"
+          class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Home</a>
+        <a href="./about.html"
+          class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">About</a>
 
-      <!-- Mobile Services dropdown -->
-      <div class="flex flex-col border-b border-[var(--color-primary)]">
-        <span class="px-3 py-2">Services</span>
-        <a href="./ev-service.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
-        <a href="./cor-empl-transport.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Employee Transport</a>
-        <a href="./evCharging.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
-        <a href="./weekend-travel.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Weekend EV Rentals</a>
-        <a href="./ev-logistic.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Logistic Service</a>
-      </div>
+        <!-- Mobile Services dropdown -->
+        <div class="flex flex-col border-b border-[var(--color-primary)]">
+          <span class="px-3 py-2">Services</span>
+          <a href="./ev-service.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Vehicle Leasing</a>
+          <a href="./cor-empl-transport.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Employee
+            Transport</a>
+          <a href="./evCharging.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Charging</a>
+          <a href="./weekend-travel.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">Weekend EV
+            Rentals</a>
+          <a href="./ev-logistic.html" class="nav-link pl-6 py-2 hover:text-[var(--color-primary)]">EV Logistic
+            Service</a>
+        </div>
 
-      <a href="./blog.html" class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Blog</a>
-      <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
-    </nav>
-  </div>
-</header>
+        <a href="./blog.html"
+          class="nav-link px-3 py-2 border-b border-[var(--color-primary)] hover:text-[var(--color-primary)]">Blog</a>
+        <a href="./contact.html" class="nav-link px-3 py-2 hover:text-[var(--color-primary)]">Contact Us</a>
+      </nav>
+    </div>
+  </header>
 
-  
+
 
 
 
 
   <!-- ✅ HERO SECTION SLIDER -->
-<section class="slider-wrapper relative overflow-hidden h-screen sm:h-[90vh] md:h-[80vh] select-none">
-  <div id="slider" class="slides flex transition-transform duration-700 ease-in-out h-full">
-    
-    <!-- Slide 1 -->
-    <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center"
-      style="background-image: url('./assets/leasinghero1.jpg');">
-      <div
-        class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/30 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl text-navy">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Drive Electric. Drive Smart.</h2>
-        <p class="text-sm sm:text-base mb-4 sm:mb-6">Flexible leasing plans for modern electric vehicles that suit your lifestyle and budget.</p>
-        <a href="#plans"
-          class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+  <section class="slider-wrapper relative overflow-hidden h-screen sm:h-[90vh] md:h-[80vh] select-none">
+    <div id="slider" class="slides flex transition-transform duration-700 ease-in-out h-full">
+
+      <!-- Slide 1 -->
+      <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center"
+        style="background-image: url('./assets/leasinghero1.jpg');">
+        <div
+          class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/30 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl text-navy">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Drive Electric. Drive Smart.</h2>
+          <p class="text-sm sm:text-base mb-4 sm:mb-6">Flexible leasing plans for modern electric vehicles that suit
+            your lifestyle and budget.</p>
+          <a href="#plans" class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
           hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
-          View Plans
-        </a>
+            View Plans
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Slide 2 -->
-    <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center"
-      style="background-image: url('./assets/leasinghero2.webp');">
-      <div
-        class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/30 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl text-navy">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Zero Emissions, Maximum Savings</h2>
-        <p class="text-sm sm:text-base mb-4 sm:mb-6">Leasing an EV helps you cut fuel costs and reduce your carbon footprint effortlessly.</p>
-        <a href="#benefits"
-          class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+      <!-- Slide 2 -->
+      <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center"
+        style="background-image: url('./assets/leasinghero2.webp');">
+        <div
+          class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/30 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl text-navy">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Zero Emissions, Maximum Savings</h2>
+          <p class="text-sm sm:text-base mb-4 sm:mb-6">Leasing an EV helps you cut fuel costs and reduce your carbon
+            footprint effortlessly.</p>
+          <a href="#benefits" class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
           hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
-          Learn More
-        </a>
+            Learn More
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Slide 3 -->
-    <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center"
-      style="background-image: url('./assets/leasinghero3.jpg');">
-      <div
-        class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/30 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl text-navy">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">EV Leasing Made Simple</h2>
-        <p class="text-sm sm:text-base mb-4 sm:mb-6">Quick approval, easy documentation, and instant delivery of your chosen electric vehicle.</p>
-        <a href="#process"
-          class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+      <!-- Slide 3 -->
+      <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center"
+        style="background-image: url('./assets/leasinghero3.jpg');">
+        <div
+          class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/30 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl text-navy">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">EV Leasing Made Simple</h2>
+          <p class="text-sm sm:text-base mb-4 sm:mb-6">Quick approval, easy documentation, and instant delivery of your
+            chosen electric vehicle.</p>
+          <a href="#fleet" class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
           hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
-          How It Works
-        </a>
+            How It Works
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Slide 4 -->
-    <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center"
-      style="background-image: url('./assets/leasinghero4.jpg');">
-      <div
-        class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/30 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl text-navy">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Stay Charged Anywhere</h2>
-        <p class="text-sm sm:text-base mb-4 sm:mb-6">Access thousands of charging stations with our EV leasing subscription benefits.</p>
-        <a href="#charging"
-          class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+      <!-- Slide 4 -->
+      <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center"
+        style="background-image: url('./assets/leasinghero4.jpg');">
+        <div
+          class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/30 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl text-navy">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Stay Charged Anywhere</h2>
+          <p class="text-sm sm:text-base mb-4 sm:mb-6">Access thousands of charging stations with our EV leasing
+            subscription benefits.</p>
+          <a href="./evCharging.html#home-work" class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
           hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
-          Find Stations
-        </a>
+            Find Stations
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Slide 5 -->
-    <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center"
-      style="background-image: url('./assets/Building a Sustainable Future.jpg');">
-      <div
-        class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/30 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl text-navy">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Future-Ready Fleet Solutions</h2>
-        <p class="text-sm sm:text-base mb-4 sm:mb-6">Equip your business with affordable electric vehicles through our leasing programs.</p>
-        <a href="#fleet"
-          class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+      <!-- Slide 5 -->
+      <div class="slide w-screen flex-shrink-0 h-full bg-cover bg-center flex items-center justify-center"
+        style="background-image: url('./assets/Building a Sustainable Future.jpg');">
+        <div
+          class="mx-4 sm:mx-auto w-full max-w-md sm:max-w-lg md:max-w-xl px-4 sm:px-6 py-6 sm:py-8 bg-white/30 backdrop-blur-md border border-white/30 text-center shadow-xl rounded-2xl text-navy">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Future-Ready Fleet Solutions</h2>
+          <p class="text-sm sm:text-base mb-4 sm:mb-6">Equip your business with affordable electric vehicles through our
+            leasing programs.</p>
+          <a href="#form" class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
           hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
-          Start Today
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Dot Controls -->
-  <div class="slider-controls absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2 sm:gap-3 z-20">
-    <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="0"></span>
-    <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="1"></span>
-    <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="2"></span>
-    <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="3"></span>
-    <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="4"></span>
-  </div>
-</section>
-
-
-
-<!-- How It Works -->
-
-<section id="fleet" class="text-gray-700 body-font py-12 px-6 sm:px-10 md:px-20 lg:px-32 mt-14">
-  <div class="text-center mb-16">
-    <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-3">How EV Leasing Works</h2>
-    <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto"></div>
-    <p class="text-base sm:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-      A simple and transparent process to start your electric journey. Follow these steps to lease a sustainable vehicle with ease.
-    </p>
-  </div>
-
-  <div class="container mx-auto px-5">
-    <!-- Step 1 -->
-    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-      <div class="absolute left-3 top-0 bottom-0 flex justify-center">
-        <div class="w-1 bg-gradient-to-b from-green-400 to-blue-500"></div>
-      </div>
-      <div class="flex-shrink-0 w-8 h-8 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-navy text-white relative z-10 font-medium text-sm">1</div>
-      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-        <div class="flex-shrink-0 w-24 h-24 bg-green-100 text-green-600 rounded-full inline-flex items-center justify-center">
-          <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-          </svg>
-        </div>
-        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h3 class="text-xl font-semibold text-navy mb-2">Explore Our EV Fleet</h3>
-          <p class="leading-relaxed text-gray-600">Browse our collection of electric and hybrid vehicles designed for clean, efficient driving.</p>
+            Start Today
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- Step 2 -->
-    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-      <div class="absolute left-3 top-0 bottom-0 flex justify-center">
-        <div class="w-1 bg-gradient-to-b from-green-400 to-blue-500"></div>
-      </div>
-      <div class="flex-shrink-0 w-8 h-8 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-navy text-white relative z-10 font-medium text-sm">2</div>
-      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-        <div class="flex-shrink-0 w-24 h-24 bg-green-100 text-green-600 rounded-full inline-flex items-center justify-center">
-          <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M22 12h-4l-3 9L9 3l-3 9H2" />
-          </svg>
-        </div>
-        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h3 class="text-xl font-semibold text-navy mb-2">Submit Your Application</h3>
-          <p class="leading-relaxed text-gray-600">Fill out a short form to share your preferences and eligibility details for leasing.</p>
-        </div>
-      </div>
+    <!-- Dot Controls -->
+    <div class="slider-controls absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2 sm:gap-3 z-20">
+      <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="0"></span>
+      <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="1"></span>
+      <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="2"></span>
+      <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="3"></span>
+      <span class="dot w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-white/50 opacity-70 cursor-pointer" data-slide="4"></span>
+    </div>
+  </section>
+
+
+
+  <!-- How It Works -->
+
+  <section id="fleet" class="text-gray-700 body-font py-12 px-6 sm:px-10 md:px-20 lg:px-32 mt-14">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-3">How EV Leasing Works</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto"></div>
+      <p class="text-base sm:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+        A simple and transparent process to start your electric journey. Follow these steps to lease a sustainable
+        vehicle with ease.
+      </p>
     </div>
 
-    <!-- Step 3 -->
-    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-      <div class="absolute left-3 top-0 bottom-0 flex justify-center">
-        <div class="w-1 bg-gradient-to-b from-green-400 to-blue-500"></div>
-      </div>
-      <div class="flex-shrink-0 w-8 h-8 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-navy text-white relative z-10 font-medium text-sm">3</div>
-      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-        <div class="flex-shrink-0 w-24 h-24 bg-green-100 text-green-600 rounded-full inline-flex items-center justify-center">
-          <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <circle cx="12" cy="5" r="3" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 22V8M5 12H2a10 10 0 0020 0h-3" />
-          </svg>
+    <div class="container mx-auto px-5">
+      <!-- Step 1 -->
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="absolute left-3 top-0 bottom-0 flex justify-center">
+          <div class="w-1 bg-gradient-to-b from-green-400 to-blue-500"></div>
         </div>
-        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h3 class="text-xl font-semibold text-navy mb-2">Fast Verification</h3>
-          <p class="leading-relaxed text-gray-600">Our team reviews your application and completes verification swiftly to keep you moving.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Step 4 -->
-    <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
-      <div class="absolute left-3 top-0 bottom-0 flex justify-center">
-        <div class="w-1 bg-gradient-to-b from-green-400 to-blue-500"></div>
-      </div>
-      <div class="flex-shrink-0 w-8 h-8 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-navy text-white relative z-10 font-medium text-sm">4</div>
-      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-        <div class="flex-shrink-0 w-24 h-24 bg-green-100 text-green-600 rounded-full inline-flex items-center justify-center">
-          <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-            <circle cx="12" cy="7" r="4" />
-          </svg>
-        </div>
-        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-          <h3 class="text-xl font-semibold text-navy mb-2">Start Driving Sustainably</h3>
-          <p class="leading-relaxed text-gray-600">Pick up or receive delivery of your EV and enjoy the benefits of clean, efficient transport.</p>
+        <div
+          class="flex-shrink-0 w-8 h-8 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-navy text-white relative z-10 font-medium text-sm">
+          1</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-green-100 text-green-600 rounded-full inline-flex items-center justify-center">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h3 class="text-xl font-semibold text-navy mb-2">Explore Our EV Fleet</h3>
+            <p class="leading-relaxed text-gray-600">Browse our collection of electric and hybrid vehicles designed for
+              clean, efficient driving.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-
-
-
-
-
-<section class="text-gray-700 body-font bg-white py-12 px-6 sm:px-10 md:px-20 lg:px-32">
-  <div class="text-center mb-16">
-    <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-3">Passive Income Calculator</h2>
-    <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto"></div>
-    <p class="text-base sm:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-      Estimate how much passive income you can generate from your electric vehicle leasing investments.
-    </p>
-  </div>
-
-  <!-- Light Card Container -->
-  <div class="max-w-4xl mx-auto bg-light text-navy border border-blue-200 rounded-md shadow-md p-6 sm:p-8 space-y-6">
-
-    <!-- Input: Vehicle Cost -->
-    <div>
-      <label class="block text-sm font-medium mb-1" for="vehicle-cost">Vehicle Cost (₹)</label>
-      <input type="number" id="vehicle-cost" placeholder="e.g. 10,00,000"
-        class="w-full px-4 py-3 bg-white text-navy placeholder-gray-500 border border-blue-200 rounded-md  focus:outline-none focus:ring-2 focus:ring-navy-400" />
-    </div>
-
-    <!-- Input: Monthly Income -->
-    <div>
-      <label class="block text-sm font-medium mb-1" for="monthly-income">Monthly Income from Lease (₹)</label>
-      <input type="number" id="monthly-income" placeholder="e.g. 25,000"
-        class="w-full px-4 py-3 bg-white text-navy placeholder-gray-500 border border-blue-200 rounded-md  focus:outline-none focus:ring-2 focus:ring-navy-400" />
-    </div>
-
-    <!-- Input: Duration -->
-    <div>
-      <label class="block text-sm font-medium mb-1" for="duration">Investment Duration (in years)</label>
-      <input type="number" id="duration" placeholder="e.g. 5"
-        class="w-full px-4 py-3 bg-white text-navy placeholder-gray-500 border border-blue-200 rounded-md  focus:outline-none focus:ring-2 focus:ring-navy-400" />
-    </div>
-
-    <!-- Styled Button -->
-    <div class="flex items-center justify-center">
-      <button onclick="calculateIncome()" class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
-          hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
-        Calculate Passive Income
-      </button>
-    </div>
-
-    <!-- Result -->
-    <div id="result" class="text-center text-base font-semibold text-navy mt-4"></div>
-  </div>
-</section>
-
-
-
-
-<section class="text-gray-700 body-font py-12 px-6 sm:px-10 md:px-20 lg:px-32">
-  <div class="text-center mb-16">
-    <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-3">Legal Agreement Highlights</h2>
-    <div class="w-24 h-1 bg-gradient-to-r from-green-300 to-blue-500 rounded mx-auto"></div>
-    <p class="text-base sm:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-      Key points to understand in your EV leasing legal agreement for a transparent and secure partnership.
-    </p>
-  </div>
-
-  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-    
-    <!-- Card 1 -->
-    <div class="bg-white border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
-      <div class="w-16 h-16 mb-4 flex items-center justify-center">
-        <svg fill="none" stroke="#32CD32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8" viewBox="0 0 24 24">
-          <path d="M12 8v4l3 3"></path>
-          <circle cx="12" cy="12" r="10"></circle>
-        </svg>
+      <!-- Step 2 -->
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="absolute left-3 top-0 bottom-0 flex justify-center">
+          <div class="w-1 bg-gradient-to-b from-green-400 to-blue-500"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-8 h-8 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-navy text-white relative z-10 font-medium text-sm">
+          2</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-green-100 text-green-600 rounded-full inline-flex items-center justify-center">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h3 class="text-xl font-semibold text-navy mb-2">Submit Your Application</h3>
+            <p class="leading-relaxed text-gray-600">Fill out a short form to share your preferences and eligibility
+              details for leasing.</p>
+          </div>
+        </div>
       </div>
-      <h4 class="font-semibold text-lg mb-2 text-navy">Term Duration</h4>
-      <p class="text-gray-600 text-sm">Lease valid for minimum 3 year with renewal options upon agreement by both parties.</p>
-    </div>
 
-    <!-- Card 2 -->
-    <div class="bg-white border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
-      <div class="w-16 h-16 mb-4 flex items-center justify-center">
-        <svg fill="none" stroke="#32CD32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8" viewBox="0 0 24 24">
-          <path d="M12 1v22"></path>
-          <path d="M6 7h12"></path>
-          <path d="M6 17h12"></path>
-        </svg>
+      <!-- Step 3 -->
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="absolute left-3 top-0 bottom-0 flex justify-center">
+          <div class="w-1 bg-gradient-to-b from-green-400 to-blue-500"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-8 h-8 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-navy text-white relative z-10 font-medium text-sm">
+          3</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-green-100 text-green-600 rounded-full inline-flex items-center justify-center">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="5" r="3" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 22V8M5 12H2a10 10 0 0020 0h-3" />
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h3 class="text-xl font-semibold text-navy mb-2">Fast Verification</h3>
+            <p class="leading-relaxed text-gray-600">Our team reviews your application and completes verification
+              swiftly to keep you moving.</p>
+          </div>
+        </div>
       </div>
-      <h4 class="font-semibold text-lg mb-2 text-navy">Payment Terms</h4>
-      <p class="text-gray-600 text-sm">Monthly payments due within 5 days; late payments may incur penalties.</p>
-    </div>
 
-    <!-- Card 3 -->
-    <div class="bg-white border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
-      <div class="w-16 h-16 mb-4 flex items-center justify-center">
-        <svg fill="none" stroke="#32CD32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8" viewBox="0 0 24 24">
-          <path d="M3 10h18"></path>
-          <path d="M3 14h18"></path>
-          <path d="M7 6v12"></path>
-          <path d="M17 6v12"></path>
-        </svg>
+      <!-- Step 4 -->
+      <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+        <div class="absolute left-3 top-0 bottom-0 flex justify-center">
+          <div class="w-1 bg-gradient-to-b from-green-400 to-blue-500"></div>
+        </div>
+        <div
+          class="flex-shrink-0 w-8 h-8 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-navy text-white relative z-10 font-medium text-sm">
+          4</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div
+            class="flex-shrink-0 w-24 h-24 bg-green-100 text-green-600 rounded-full inline-flex items-center justify-center">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h3 class="text-xl font-semibold text-navy mb-2">Start Driving Sustainably</h3>
+            <p class="leading-relaxed text-gray-600">Pick up or receive delivery of your EV and enjoy the benefits of
+              clean, efficient transport.</p>
+          </div>
+        </div>
       </div>
-      <h4 class="font-semibold text-lg mb-2 text-navy">Maintenance</h4>
-      <p class="text-gray-600 text-sm">Lessee handles routine upkeep to keep the vehicle in good condition.</p>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <section class="text-gray-700 body-font bg-white py-12 px-6 sm:px-10 md:px-20 lg:px-32">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-3">Passive Income Calculator</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto"></div>
+      <p class="text-base sm:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+        Estimate how much passive income you can generate from your electric vehicle leasing investments.
+      </p>
     </div>
 
-    <!-- Card 4 -->
-    <div class="bg-white border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
-      <div class="w-16 h-16 mb-4 flex items-center justify-center">
-        <svg fill="none" stroke="#32CD32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8" viewBox="0 0 24 24">
-          <path d="M6 18L18 6"></path>
-          <path d="M6 6l12 12"></path>
-        </svg>
-      </div>
-      <h4 class="font-semibold text-lg mb-2 text-navy">Termination</h4>
-      <p class="text-gray-600 text-sm">Either party can terminate with 90-day notice and settle outstanding dues.</p>
-    </div>
-  </div>
-</section>
+    <!-- Light Card Container -->
+    <div class="max-w-4xl mx-auto bg-light text-navy border border-blue-200 rounded-md shadow-md p-6 sm:p-8 space-y-6">
 
-
-<section class="text-dark body-font bg-gradient-to-b from-green-100 via-blue-100 to-white py-24 px-6 sm:px-10 md:px-20 lg:px-32 font-sans">
-  <div class="container mx-auto max-w-2xl">
-    
-    <!-- Heading + Description -->
-    <div class="text-center mb-12">
-  <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Start Your EV Journey</h2>
-  <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto mb-8"></div>
-  <p class="leading-relaxed text-base text-gray-700">
-    Please fill out the form below to get started with your EV lease application.
-  </p>
-</div>
-
-
-    <!-- Form Inputs & Button -->
-    <form class="space-y-6">
-
-      <!-- Full Name -->
+      <!-- Input: Vehicle Cost -->
       <div>
-        <label for="full-name" class="block text-sm font-medium text-navy mb-1">Full Name</label>
-        <input type="text" id="full-name" name="full-name" placeholder="Your full name"
-          class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm" />
+        <label class="block text-sm font-medium mb-1" for="vehicle-cost">Vehicle Cost (₹)</label>
+        <input type="number" id="vehicle-cost" placeholder="e.g. 10,00,000"
+          class="w-full px-4 py-3 bg-white text-navy placeholder-gray-500 border border-blue-200 rounded-md  focus:outline-none focus:ring-2 focus:ring-navy-400" />
       </div>
 
-      <!-- Email -->
+      <!-- Input: Monthly Income -->
       <div>
-        <label for="email" class="block text-sm font-medium text-navy mb-1">Email</label>
-        <input type="email" id="email" name="email" placeholder="example@mail.com"
-          class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm" />
+        <label class="block text-sm font-medium mb-1" for="monthly-income">Monthly Income from Lease (₹)</label>
+        <input type="number" id="monthly-income" placeholder="e.g. 25,000"
+          class="w-full px-4 py-3 bg-white text-navy placeholder-gray-500 border border-blue-200 rounded-md  focus:outline-none focus:ring-2 focus:ring-navy-400" />
       </div>
 
-      <!-- Phone Number -->
+      <!-- Input: Duration -->
       <div>
-        <label for="phone" class="block text-sm font-medium text-navy mb-1">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210"
-          class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm" />
+        <label class="block text-sm font-medium mb-1" for="duration">Investment Duration (in years)</label>
+        <input type="number" id="duration" placeholder="e.g. 5"
+          class="w-full px-4 py-3 bg-white text-navy placeholder-gray-500 border border-blue-200 rounded-md  focus:outline-none focus:ring-2 focus:ring-navy-400" />
       </div>
 
-      <!-- Lease Duration -->
-      <div>
-        <label for="lease-duration" class="block text-sm font-medium text-navy mb-1">Lease Duration</label>
-        <select id="lease-duration" name="lease-duration"
-          class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm">
-          <option value="" disabled selected>Select duration</option>
-          <option value="1year">1 Year</option>
-          <option value="2years">2 Years</option>
-          <option value="3years">3 Years</option>
-        </select>
-      </div>
-
-      <!-- Additional Notes -->
-      <div>
-        <label for="notes" class="block text-sm font-medium text-navy mb-1">Additional Notes</label>
-        <textarea id="notes" name="notes" rows="4" placeholder="Any specific requirements or questions..."
-          class="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 py-2 transition-colors duration-200 ease-in-out shadow-sm resize-none"></textarea>
-      </div>
-
-      <!-- Submit Button -->
+      <!-- Styled Button -->
       <div class="flex items-center justify-center">
-        <button type="submit"
-          class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+        <button onclick="calculateIncome()" class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
           hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
-          Submit
+          Calculate Passive Income
         </button>
       </div>
 
-    </form>
-  </div>
-</section>
+      <!-- Result -->
+      <div id="result" class="text-center text-base font-semibold text-navy mt-4"></div>
+    </div>
+  </section>
 
 
 
 
-<section class="text-gray-700 bg-white body-font pb-12 px-6 sm:px-10 md:px-20 lg:px-32 font-sans">
-  <div class="text-center mb-16">
-    <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-3">Why Lease Your EV with Us</h2>
-    <div class="w-24 h-1 bg-gradient-to-r from-green-300 to-blue-500 rounded mx-auto"></div>
-    <p class="text-base sm:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-      Enjoy exclusive benefits that make your transition to electric driving smooth, affordable, and sustainable.
-    </p>
-  </div>
-
-  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-    <!-- Benefit 1 -->
-    <div class="bg-light border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
-      <div class="w-16 h-16 mb-4 flex items-center justify-center text-primary">
-        <!-- Icon: Check Circle -->
-        <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
-             class="w-8 h-8" viewBox="0 0 24 24" stroke="#32CD32">
-          <path d="M5 13l4 4L19 7"></path>
-        </svg>
-      </div>
-      <h4 class="font-semibold text-lg mb-2 text-navy">Flexible Plans</h4>
-      <p class="text-gray-600 text-sm">Choose from customized leasing options tailored to your budget and lifestyle.</p>
+  <section id="benefits" class="text-gray-700 body-font py-12 px-6 sm:px-10 md:px-20 lg:px-32">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-3">Legal Agreement Highlights</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-green-300 to-blue-500 rounded mx-auto"></div>
+      <p class="text-base sm:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+        Key points to understand in your EV leasing legal agreement for a transparent and secure partnership.
+      </p>
     </div>
 
-    <!-- Benefit 2 -->
-    <div class="bg-light border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
-      <div class="w-16 h-16 mb-4 flex items-center justify-center text-primary">
-        <!-- Icon: Battery -->
-        <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-             class="w-8 h-8" viewBox="0 0 24 24" stroke="#32CD32">
-          <rect x="2" y="7" width="18" height="10" rx="2" ry="2"></rect>
-          <line x1="7" y1="7" x2="7" y2="17"></line>
-          <line x1="17" y1="7" x2="17" y2="17"></line>
-          <line x1="22" y1="11" x2="22" y2="13"></line>
-        </svg>
-      </div>
-      <h4 class="font-semibold text-lg mb-2 text-navy">Sustainable Driving</h4>
-      <p class="text-gray-600 text-sm">Drive zero-emission vehicles and make a positive impact on the environment.</p>
-    </div>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-    <!-- Benefit 3 -->
-    <div class="bg-light border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
-      <div class="w-16 h-16 mb-4 flex items-center justify-center text-primary">
-        <!-- Icon: Support -->
-        <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-             class="w-8 h-8" viewBox="0 0 24 24" stroke="#32CD32">
-          <circle cx="12" cy="12" r="10"></circle>
-          <path d="M15 12h-6"></path>
-          <path d="M12 15v-6"></path>
-        </svg>
-      </div>
-      <h4 class="font-semibold text-lg mb-2 text-navy">Dedicated Support</h4>
-      <p class="text-gray-600 text-sm">Get 24/7 assistance and expert guidance throughout your lease term.</p>
-    </div>
-
-    <!-- Benefit 4 -->
-    <div class="bg-light border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
-      <div class="w-16 h-16 mb-4 flex items-center justify-center text-primary">
-        <!-- Icon: Easy Returns -->
-        <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-             class="w-8 h-8" viewBox="0 0 24 24" stroke="#32CD32">
-          <path d="M17 1l4 4-4 4"></path>
-          <path d="M3 11v-1a4 4 0 014-4h14"></path>
-          <path d="M21 13v1a4 4 0 01-4 4H3"></path>
-        </svg>
-      </div>
-      <h4 class="font-semibold text-lg mb-2 text-navy">Simple Returns</h4>
-      <p class="text-gray-600 text-sm">Enjoy a transparent and hassle-free return process when your lease ends.</p>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-  <!-- Footer Section -->
-<footer class="bg-[var(--color-navy)] text-[var(--color-light)] body-font px-6 sm:px-10 lg:px-20 py-10">
-  <div class="container mx-auto">
-    <div class="flex flex-wrap md:text-left text-center">
-
-      <!-- Column 1 -->
-      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-        <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">CATEGORIES</h2>
-        <nav class="list-none space-y-2">
-          <li><a href="./index.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Home</a></li>
-          <li><a href="./about.html" class="hover:text-[var(--color-aqua)] cursor-pointer">About</a></li>
-          <li><a href="./index.html#services" class="hover:text-[var(--color-aqua)] cursor-pointer">Services</a></li>
-          <li><a href="./blog.html" class="hover:text-[var(--color-aqua)] cursor-pointer">Blog</a></li>
-        </nav>
-      </div>
-
-      <!-- Column 2 (Now POLICIES instead of SERVICES) -->
-      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-        <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">POLICIES</h2>
-        <nav class="list-none space-y-2">
-          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./privacy-policy.html">Privacy Policy</a></li>
-          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./t&c.html">Terms & Conditions</a></li>
-          <li><a class="hover:text-[var(--color-aqua)] cursor-pointer" href="./refund-policy.html">Refund Policy</a></li>
-        </nav>
-      </div>
-
-      <!-- Column 3 (Now REGISTERED ADDRESS instead of POLICIES) -->
-      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-        <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">REGISTERED ADDRESS</h2>
-        <div class="space-y-3 text-sm leading-relaxed">
-          <p class="flex items-start">
-            <i class="fas fa-map-marker-alt mr-2 mt-1 text-[var(--color-aqua)]"></i>
-            <span>
-              26E, Raipur Mondal Para Road, <br>
-              P.S. Netaji Nagar, Naktala, <br>
-              Kolkata – 700047, West Bengal, India
-            </span>
-          </p>
+      <!-- Card 1 -->
+      <div class="bg-white border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center">
+          <svg fill="none" stroke="#32CD32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="w-8 h-8" viewBox="0 0 24 24">
+            <path d="M12 8v4l3 3"></path>
+            <circle cx="12" cy="12" r="10"></circle>
+          </svg>
         </div>
-          <p class="flex items-center">
-            <i class="fas fa-phone mr-2 text-[var(--color-aqua)]"></i>
-            +91 62918 42407
-          </p>
-          <p class="flex items-center">
-            <i class="fas fa-envelope mr-2 text-[var(--color-aqua)]"></i>
-            support@example.com
-          </p>
+        <h4 class="font-semibold text-lg mb-2 text-navy">Term Duration</h4>
+        <p class="text-gray-600 text-sm">Lease valid for minimum 3 year with renewal options upon agreement by both
+          parties.</p>
       </div>
 
-      <!-- Column 4 (Contact) -->
-      <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
-        <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">
-          OFFICE ADDRESS
-        </h2>
-        <div class="space-y-3 text-sm leading-relaxed">
-          <p class="flex items-start">
-            <i class="fas fa-map-marker-alt mr-2 mt-1 text-[var(--color-aqua)]"></i>
-            <span>
-              Shilpota More, Mahammadpur Road (Opposite Curiosity),
-              New Town, <br>
-              Kolkata – 700135,
-              West Bengal, India
-            </span>
-          </p>
-        
+      <!-- Card 2 -->
+      <div class="bg-white border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center">
+          <svg fill="none" stroke="#32CD32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="w-8 h-8" viewBox="0 0 24 24">
+            <path d="M12 1v22"></path>
+            <path d="M6 7h12"></path>
+            <path d="M6 17h12"></path>
+          </svg>
         </div>
-
-        <button onclick="window.location.href='./contact.html'"
-          class="mt-4 bg-[var(--color-aqua)] hover:bg-white text-[var(--color-navy)] font-semibold py-2 px-6 rounded transition duration-300">
-          Contact Us
-        </button>
+        <h4 class="font-semibold text-lg mb-2 text-navy">Payment Terms</h4>
+        <p class="text-gray-600 text-sm">Monthly payments due within 5 days; late payments may incur penalties.</p>
       </div>
 
+      <!-- Card 3 -->
+      <div class="bg-white border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center">
+          <svg fill="none" stroke="#32CD32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="w-8 h-8" viewBox="0 0 24 24">
+            <path d="M3 10h18"></path>
+            <path d="M3 14h18"></path>
+            <path d="M7 6v12"></path>
+            <path d="M17 6v12"></path>
+          </svg>
+        </div>
+        <h4 class="font-semibold text-lg mb-2 text-navy">Maintenance</h4>
+        <p class="text-gray-600 text-sm">Lessee handles routine upkeep to keep the vehicle in good condition.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center">
+          <svg fill="none" stroke="#32CD32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="w-8 h-8" viewBox="0 0 24 24">
+            <path d="M6 18L18 6"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </div>
+        <h4 class="font-semibold text-lg mb-2 text-navy">Termination</h4>
+        <p class="text-gray-600 text-sm">Either party can terminate with 90-day notice and settle outstanding dues.</p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Bottom Bar -->
-  <div class="bg-white/10 mt-8">
-    <div class="container mx-auto px-5 py-4 flex flex-col sm:flex-row items-center justify-between">
 
-      <!-- Logo & Name -->
-      <div class="flex items-center justify-center sm:justify-start mb-4 sm:mb-0">
-        <img src="./assets/R_Secondary 4_PNG3.png" alt="FusionStyle Logo" class="w-14 h-14 object-contain mr-2" />
-      </div>
+  <section id="form"
+    class="text-dark body-font bg-gradient-to-b from-green-100 via-blue-100 to-white py-24 px-6 sm:px-10 md:px-20 lg:px-32 font-sans">
+    <div class="container mx-auto max-w-2xl">
 
-      <!-- Copyright -->
-      <div class="text-center sm:text-left">
-        <p class="text-sm text-[var(--color-light)]">© 2025 Trio — All Rights Reserved</p>
-        <p class="text-xs text-[var(--color-light)] mt-1">
-          Designed & Developed by
-          <a href="#" class="text-[var(--color-aqua)] ml-1" target="_blank">@thundergits</a>
+      <!-- Heading + Description -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4">Start Your EV Journey</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-green-400 to-blue-500 rounded mx-auto mb-8"></div>
+        <p class="leading-relaxed text-base text-gray-700">
+          Please fill out the form below to get started with your EV lease application.
         </p>
       </div>
 
-      <!-- Social Icons -->
-      <div class="flex justify-center sm:justify-end space-x-4 mt-4 sm:mt-0">
-        <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]"
-          href="https://www.facebook.com/profile.php?id=61578890532007">
-          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+
+      <!-- Form Inputs & Button -->
+      <form class="space-y-6">
+
+        <!-- Full Name -->
+        <div>
+          <label for="full-name" class="block text-sm font-medium text-navy mb-1">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Your full name"
+            class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm" />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="block text-sm font-medium text-navy mb-1">Email</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com"
+            class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm" />
+        </div>
+
+        <!-- Phone Number -->
+        <div>
+          <label for="phone" class="block text-sm font-medium text-navy mb-1">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+91 9876543210"
+            class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm" />
+        </div>
+
+        <!-- Lease Duration -->
+        <div>
+          <label for="lease-duration" class="block text-sm font-medium text-navy mb-1">Lease Duration</label>
+          <select id="lease-duration" name="lease-duration"
+            class="w-full h-[44px] bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 transition-colors duration-200 ease-in-out shadow-sm">
+            <option value="" disabled selected>Select duration</option>
+            <option value="1year">1 Year</option>
+            <option value="2years">2 Years</option>
+            <option value="3years">3 Years</option>
+          </select>
+        </div>
+
+        <!-- Additional Notes -->
+        <div>
+          <label for="notes" class="block text-sm font-medium text-navy mb-1">Additional Notes</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Any specific requirements or questions..."
+            class="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/30 text-base outline-none text-gray-800 px-4 py-2 transition-colors duration-200 ease-in-out shadow-sm resize-none"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="flex items-center justify-center">
+          <button type="submit" class="inline-block mt-3 sm:mt-6 px-4 py-1 text-[var(--color-navy)] text-sm sm:text-base bg-white border border-[var(--color-navy)] rounded-md shadow-sm
+          hover:bg-[var(--color-navy)] hover:text-white hover:scale-105 transition duration-300 ease-in-out">
+            Submit
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+
+
+
+  <section class="text-gray-700 bg-white body-font pb-12 px-6 sm:px-10 md:px-20 lg:px-32 font-sans">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-3">Why Lease Your EV with Us</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-green-300 to-blue-500 rounded mx-auto"></div>
+      <p class="text-base sm:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+        Enjoy exclusive benefits that make your transition to electric driving smooth, affordable, and sustainable.
+      </p>
+    </div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Benefit 1 -->
+      <div class="bg-light border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center text-primary">
+          <!-- Icon: Check Circle -->
+          <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="w-8 h-8" viewBox="0 0 24 24" stroke="#32CD32">
+            <path d="M5 13l4 4L19 7"></path>
           </svg>
-        </a>
-        <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
-          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
-            <path
-              d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012.63 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-            </path>
+        </div>
+        <h4 class="font-semibold text-lg mb-2 text-navy">Flexible Plans</h4>
+        <p class="text-gray-600 text-sm">Choose from customized leasing options tailored to your budget and lifestyle.
+        </p>
+      </div>
+
+      <!-- Benefit 2 -->
+      <div class="bg-light border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center text-primary">
+          <!-- Icon: Battery -->
+          <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="w-8 h-8" viewBox="0 0 24 24" stroke="#32CD32">
+            <rect x="2" y="7" width="18" height="10" rx="2" ry="2"></rect>
+            <line x1="7" y1="7" x2="7" y2="17"></line>
+            <line x1="17" y1="7" x2="17" y2="17"></line>
+            <line x1="22" y1="11" x2="22" y2="13"></line>
           </svg>
-        </a>
-        <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
-          <svg fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
-            <path d="M18.5 6.5h.01"></path>
+        </div>
+        <h4 class="font-semibold text-lg mb-2 text-navy">Sustainable Driving</h4>
+        <p class="text-gray-600 text-sm">Drive zero-emission vehicles and make a positive impact on the environment.</p>
+      </div>
+
+      <!-- Benefit 3 -->
+      <div class="bg-light border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center text-primary">
+          <!-- Icon: Support -->
+          <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="w-8 h-8" viewBox="0 0 24 24" stroke="#32CD32">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M15 12h-6"></path>
+            <path d="M12 15v-6"></path>
           </svg>
-        </a>
-        <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
-          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-            <circle cx="4" cy="4" r="2"></circle>
+        </div>
+        <h4 class="font-semibold text-lg mb-2 text-navy">Dedicated Support</h4>
+        <p class="text-gray-600 text-sm">Get 24/7 assistance and expert guidance throughout your lease term.</p>
+      </div>
+
+      <!-- Benefit 4 -->
+      <div class="bg-light border border-gray-200 rounded-sm shadow p-6 flex flex-col items-center text-center">
+        <div class="w-16 h-16 mb-4 flex items-center justify-center text-primary">
+          <!-- Icon: Easy Returns -->
+          <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="w-8 h-8" viewBox="0 0 24 24" stroke="#32CD32">
+            <path d="M17 1l4 4-4 4"></path>
+            <path d="M3 11v-1a4 4 0 014-4h14"></path>
+            <path d="M21 13v1a4 4 0 01-4 4H3"></path>
           </svg>
-        </a>
+        </div>
+        <h4 class="font-semibold text-lg mb-2 text-navy">Simple Returns</h4>
+        <p class="text-gray-600 text-sm">Enjoy a transparent and hassle-free return process when your lease ends.</p>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
 
 
 
 
 
 
-<script>
-  function calculateIncome() {
-    const cost = parseFloat(document.getElementById('vehicle-cost').value);
-    const monthly = parseFloat(document.getElementById('monthly-income').value);
-    const duration = parseFloat(document.getElementById('duration').value);
+  <!-- Lease Plan Section -->
+  <section id="plans" class="bg-[#F5F7FA] py-20 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto text-center">
+      <!-- Heading -->
+      <h2 class="text-4xl font-bold text-[#0A2540] mb-4">
+        Our Lease Plans
+      </h2>
+      <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+        Choose the plan that suits your business needs. Trio-EV takes care of everything — from paperwork to charging.
+      </p>
 
-    if (!cost || !monthly || !duration) {
-      document.getElementById('result').innerText = 'Please fill all fields correctly.';
-      return;
+      <!-- Plans -->
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- Plan 1 -->
+        <div
+          class="bg-white border border-[#E5E7EB] rounded-md shadow-md hover:shadow-xl hover:scale-[1.02] transition duration-300 flex flex-col">
+          <!-- Title -->
+          <div class="bg-[#4FD1C5] text-white text-lg font-semibold py-3 rounded-t-md">
+            Lease Plan - I
+          </div>
+          <div class="p-6 flex flex-col flex-1">
+            <ul class="space-y-4 text-left text-[#333333] flex-1">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#32CD32] mr-3 flex-shrink-0" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Vehicle Type: TATA XPRESS-T, CIETRON
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#32CD32] mr-3 flex-shrink-0" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Duration: Dry Lease for 3 Years
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#32CD32] mr-3 flex-shrink-0" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Cost: <span class="font-semibold ml-1">28K Monthly</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#32CD32] mr-3 flex-shrink-0" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Includes: Maintenance, Paper Work, Charging, Driver Salary
+              </li>
+            </ul>
+            <!-- Button always at bottom -->
+            <div class="mt-auto pt-6">
+              <a href="./contact.html">
+                <button
+                  class="py-2 px-6 rounded-md text-white bg-[#0A2540] border border-[#0A2540] hover:bg-white hover:text-[#0A2540] transition">
+                  Choose Plan
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan 2 -->
+        <div
+          class="bg-white border border-[#E5E7EB] rounded-md shadow-md hover:shadow-xl hover:scale-[1.02] transition duration-300 flex flex-col">
+          <!-- Title -->
+          <div class="bg-[#4FD1C5] text-white text-lg font-semibold py-3 rounded-t-md">
+            Lease Plan - II
+          </div>
+          <div class="p-6 flex flex-col flex-1">
+            <ul class="space-y-4 text-left text-[#333333] flex-1">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#32CD32] mr-3 flex-shrink-0" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Vehicle Type: TATA XPRESS-T, CIETRON
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#32CD32] mr-3 flex-shrink-0" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Duration: Dry Lease for 3 Years
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#32CD32] mr-3 flex-shrink-0" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Cost: <span class="font-semibold ml-1">33K Monthly</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#32CD32] mr-3 flex-shrink-0" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Includes: Maintenance, Charging, Driver Salary
+              </li>
+            </ul>
+            <!-- Button always at bottom -->
+            <div class="mt-auto pt-6">
+              <a href="./contact.html">
+                <button
+                  class="py-2 px-6 rounded-md text-white bg-[#0A2540] border border-[#0A2540] hover:bg-white hover:text-[#0A2540] transition">
+                  Choose Plan
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- ✅ Footer Section -->
+  <footer class="bg-[var(--color-navy)] text-[var(--color-light)] body-font px-6 sm:px-10 lg:px-20 py-10">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap md:text-left text-center">
+
+        <!-- Column 1 -->
+        <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">CATEGORIES</h2>
+          <ul class="space-y-2">
+            <li><a href="./index.html" class="hover:text-[var(--color-aqua)]">Home</a></li>
+            <li><a href="./about.html" class="hover:text-[var(--color-aqua)]">About</a></li>
+            <li><a href="./index.html#services" class="hover:text-[var(--color-aqua)]">Services</a></li>
+            <li><a href="./blog.html" class="hover:text-[var(--color-aqua)]">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">POLICIES</h2>
+          <ul class="space-y-2">
+            <li><a href="./privacy-policy.html" class="hover:text-[var(--color-aqua)]">Privacy Policy</a></li>
+            <li><a href="./t&c.html" class="hover:text-[var(--color-aqua)]">Terms & Conditions</a></li>
+            <li><a href="./refund-policy.html" class="hover:text-[var(--color-aqua)]">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">
+            REGISTERED ADDRESS
+          </h2>
+          <div class="space-y-3 text-sm leading-relaxed">
+
+            <!-- Location -->
+            <div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-2 md:gap-3">
+              <i class="fas fa-map-marker-alt text-[var(--color-aqua)] md:mt-1"></i>
+              <span>
+                26E, Raipur Mondal Para Road, <br>
+                P.S. Netaji Nagar, Naktala, <br>
+                Kolkata – 700047, West Bengal, India
+              </span>
+            </div>
+
+            <!-- Phone -->
+            <div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-2 md:gap-3">
+              <i class="fas fa-phone text-[var(--color-aqua)] md:mt-1"></i>
+              <span>+91 62918 42407</span>
+            </div>
+
+            <!-- Email -->
+            <div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-2 md:gap-3">
+              <i class="fas fa-envelope text-[var(--color-aqua)] md:mt-1"></i>
+              <span>support@example.com</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <h2 class="title-font font-medium tracking-widest text-sm mb-3 text-[var(--color-aqua)]">
+            OFFICE ADDRESS
+          </h2>
+          <div class="space-y-3 text-sm leading-relaxed">
+
+            <!-- Location -->
+            <div class="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-2 md:gap-3">
+              <i class="fas fa-map-marker-alt text-[var(--color-aqua)] md:mt-1"></i>
+              <span>
+                Shilpota More, Mahammadpur Road (Opposite Curiosity), <br>
+                New Town, Kolkata – 700135, West Bengal, India
+              </span>
+            </div>
+
+          </div>
+
+          <div class="flex justify-center md:justify-start mt-4">
+            <button onclick="window.location.href='./contact.html'"
+              class="bg-[var(--color-aqua)] hover:bg-white text-[var(--color-navy)] font-semibold py-2 px-6 rounded transition duration-300">
+              Contact Us
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bg-white/10 ">
+      <div
+        class="container mx-auto px-5 py-4 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
+
+        <!-- Logo -->
+        <div class="flex items-center justify-center sm:justify-start">
+          <img src="./assets/R_Secondary 4_PNG3.png" alt="FusionStyle Logo" class="w-14 h-14 object-contain mr-2" />
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center sm:text-left">
+          <p class="text-sm text-[var(--color-light)]">© 2025 Trio — All Rights Reserved</p>
+          <p class="text-xs text-[var(--color-light)] mt-1">
+            Designed & Developed by
+            <a href="#" class="text-[var(--color-aqua)] ml-1" target="_blank">@thundergits</a>
+          </p>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex justify-center sm:justify-end space-x-4">
+          <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]"
+            href="https://www.facebook.com/profile.php?id=61578890532007">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+            </svg>
+          </a>
+          <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012.63 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+              <path d="M18.5 6.5h.01"></path>
+            </svg>
+          </a>
+          <a class="text-[var(--color-light)] hover:text-[var(--color-aqua)]" href="#">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script>
+    function calculateIncome() {
+      const cost = parseFloat(document.getElementById('vehicle-cost').value);
+      const monthly = parseFloat(document.getElementById('monthly-income').value);
+      const duration = parseFloat(document.getElementById('duration').value);
+
+      if (!cost || !monthly || !duration) {
+        document.getElementById('result').innerText = 'Please fill all fields correctly.';
+        return;
+      }
+
+      const totalIncome = monthly * 12 * duration;
+      const profit = totalIncome - cost;
+
+      document.getElementById('result').innerText = `📈 Estimated Passive Income in ${duration} years: ₹${totalIncome.toLocaleString()} (Net Profit: ₹${profit.toLocaleString()})`;
     }
+  </script>
 
-    const totalIncome = monthly * 12 * duration;
-    const profit = totalIncome - cost;
 
-    document.getElementById('result').innerText = `📈 Estimated Passive Income in ${duration} years: ₹${totalIncome.toLocaleString()} (Net Profit: ₹${profit.toLocaleString()})`;
-  }
-</script>
-
-  
 
 
   <script src="./script.js"></script>
